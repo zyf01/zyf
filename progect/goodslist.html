@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en" id="top" class="no-js">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>商品列表</title>
+		<meta name="description" content="佛罗伦萨小镇" />
+		<meta name="keywords" content="佛罗伦萨小镇" />
+		<meta name="robots" content="INDEX,FOLLOW" />
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<link rel="icon" href=" img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/goodslist.css" />
+		<link rel="stylesheet" href="css/core.css" />
+		<link rel="stylesheet" href="carousel.css">
+		<link rel="stylesheet" href="css/3.css" />
+		<link rel="stylesheet" href="css/core.css" />
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="page-header" id="page-header">
+			<div class="main-nav">
+				<a href="/">
+					<div class="logo logoa"></div>
+				</a>
+				<div class="nav">
+					<ul class="vice">
+						<li>
+							<a href="https://www.fvoutlet.com/index.php/customer/account/login/?redirect_uri=/">请登录</a><span></span></li>
+						<li>
+							<a href="https://www.fvoutlet.com/index.php/customer/account/create/?type=reg">免费注册</a><span></span></li>
+						<li>
+							<a href="/outlet/sh">探索佛罗伦萨小<span></span></a>
+						</li>
+						<li>
+							<a href="https://www.fvoutlet.com/index.php/sales/order/history/">追踪我的订单</a><span></span></li>
+						<li>
+							<a class="customer-service" href="/help">客服帮助</a>
+							<div class="customer-service-modal">
+								<p class="text">需要帮助？客服热线</p>
+								<a class="phone" href="tel:4006946868">4006946868</a>
+								<p class="time">周一至周日 8:00 - 21:30</p>
+							</div>
+						</li>
+					</ul>
+					<div class="main">
+						<ul class="categories">
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7">服饰</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-bags.html?from=nav_8">包袋</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-shoes.html?from=nav_5">鞋履</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-accessories.html?from=nav_6">配饰</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-jewelry.html?from=nav_41">首饰</a>
+							</li>
+						</ul>
+						<div class="category-panel">
+							<div class="category-panel__wrapper">
+								<div class="category-panel__item">
+									<p class="category-panel__title">上装</p>
+								</div>
+								<div class="category-panel__item">
+									<p class="category-panel__title">下装</p>
+								</div>
+								<div class="category-panel__item">
+									<p class="category-panel__title">连衣裙</p>
+								</div>
+								<div class="category-panel__item">
+									<p class="category-panel__title">内衣</p>
+									<p class="category-panel__child">文胸</p>
+									<p class="category-panel__child">底裤</p>
+									<p class="category-panel__child">睡衣</p>
+									<p class="category-panel__child">泳衣</p>
+								</div>
+							</div>
+						</div>
+						<!-- <ul class="extra" style="display: none;">
+                  <a title="心愿单" href="/wishlist" class="icon icon-like"></a>
+                  <div class="icon icon-search active" title="搜索">
+                  </div>
+                  <a title="购物袋" href="https://www.fvoutlet.com/index.php/checkout/cart/" class="icon-cart-wrapper">
+                    <div class="icon icon-cart"></div>
+                  </a>
+                </ul> -->
+						<ul class="extra">
+							<a link " title="心愿单" href="/wishlist" class="icon icon-like "></a>
+              <div class="icon icon-search active "  title="搜索 ">
+              </div>
+              <input id = "searchinp" placeholder="搜索" style="width: 0; ">
+              <a " title="购物袋" href="https://www.fvoutlet.com/index.php/checkout/cart/" class="icon-cart-wrapper">
+								<div class="icon icon-cart"></div>
+							</a>
+						</ul>
+						<script type="text/javascript">
+              $(function(){
+                $(".icon-search").click(2000,function(){
+                  let widthl = parseInt($("#searchinp")[0].style.width);
+                  console.log(widthl);
+                  if(widthl == 124){
+                    $("#searchinp").css("width","0px");
+                  }else if(widthl == 0){
+                    $("#searchinp").css("width","124px");
+                  } 
+                });
+              });
+            </script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <script type="text/javascript">
+      $(function(){
+        $(".categories li").mouseover(
+          function () {
+              $(".category-panel").css({"display":"block"});
+              $(".categories li").mouseout(function(){$(".category-panel").css("display","none");});
+              }
+            )
+        });
+    </script> -->
+		<script type="text/javascript">
+			$(function() {
+				$(".categories li").mouseover(
+					function() {
+						$(".category-panel").css({
+							"top": "110px",
+							"opacity": "1"
+						});
+					}
+				);
+				$(".category-panel").mouseover(
+					function() {
+						$(".category-panel").css({
+							"top": "110px",
+							"opacity": "1"
+						});
+					}
+				);
+				$(".category-panel").mouseout(
+					function() {
+						$(".category-panel").css({
+							"top": "-1000px",
+							"opacity": "0"
+						});
+					}
+				);
+				$(".categories li").mouseout(
+					function() {
+						$(".category-panel").css({
+							"top": "-1000px",
+							"opacity": "0"
+						});
+					}
+				)
+			});
+		</script>
+		<script type="text/javascript">
+			var logoa = document.getElementsByClassName("logoa");
+			var vice = document.getElementsByClassName("vice");
+			var main = document.getElementsByClassName("main-nav");
+			var categoryPanel = document.getElementsByClassName("category-panel");
+			window.onscroll = function() {
+				var _scroll = document.body.scrollTop || document.documentElement.scrollTop;
+				if(_scroll >= 1000) {
+					logoa[0].style.backgroundImage = 'url(img/logo-small.png)';
+					logoa[0].style.width = "120px";
+					logoa[0].style.height = "66px";
+					vice[0].style.display = "none";
+					main[0].style.paddingTop = "5px";
+					main[0].style.paddingBottom = "5px";
+					categoryPanel[0].style.top = "77px";
+					$(function() {
+						$(".categories li").mouseover(
+							function() {
+								$(".category-panel").css({
+									"top": "77px",
+									"opacity": "1"
+								});
+							}
+						);
+						$(".category-panel").mouseover(
+							function() {
+								$(".category-panel").css({
+									"top": "77px",
+									"opacity": "1"
+								});
+							}
+						);
+						$(".category-panel").mouseout(
+							function() {
+								$(".category-panel").css({
+									"top": "-1000px",
+									"opacity": "0"
+								});
+							}
+						);
+						$(".categories li").mouseout(
+							function() {
+								$(".category-panel").css({
+									"top": "-1000px",
+									"opacity": "0"
+								});
+							}
+						)
+					});
+				} else {
+					logoa[0].style.backgroundImage = 'url(img/logo.png)';
+					logoa[0].style.width = "150px";
+					logoa[0].style.height = "82px";
+					vice[0].style.display = "block";
+					main[0].style.paddingTop = "14px";
+					main[0].style.paddingBottom = "14px";
+					categoryPanel[0].style.top = "110px";
+					$(function() {
+						$(".categories li").mouseover(
+							function() {
+								$(".category-panel").css({
+									"top": "110px",
+									"opacity": "1"
+								});
+							}
+						);
+						$(".category-panel").mouseover(
+							function() {
+								$(".category-panel").css({
+									"top": "110px",
+									"opacity": "1"
+								});
+							}
+						);
+						$(".category-panel").mouseout(
+							function() {
+								$(".category-panel").css({
+									"top": "-1000px",
+									"opacity": "0"
+								});
+							}
+						);
+						$(".categories li").mouseout(
+							function() {
+								$(".category-panel").css({
+									"top": "-1000px",
+									"opacity": "0"
+								});
+							}
+						)
+					});
+				}
+			}
+		</script>
+		<!-- page content -->
+		<div class="products">
+			<div id="page-products" class="product-wrapper">
+				<div class="product-filter hidden-xs">
+					<div class="product-filter__classify layout-center" style="display: block;">
+
+						<span class="product-filter__item product-filter__classify-brand">服饰</span>
+
+						<span class="product-filter__item">
+            
+              <span class="product-filter__content">全部服饰</span>
+
+						<i class="icon icon-select"></i>
+						<div class="product-filter__list">
+							<p class="product-filter__list-item">全部服饰</p>
+
+							<p class="product-filter__list-item">上装</p>
+
+							<p class="product-filter__list-item">下装</p>
+
+							<p class="product-filter__list-item">连衣裙</p>
+
+							<p class="product-filter__list-item">内衣</p>
+
+						</div>
+						</span>
+
+					</div>
+					<div class="product-filter__filter layout-center">
+						<div class="product-filter__attr">
+							<div c-show="filter.data.length" style="display: block;">
+
+								<span class="product-filter__item">
+              <!-- 颜色&nbsp;&nbsp; -->
+              <!-- FIX: 无法多重条件筛选的问题 -->
+              颜色&nbsp;&nbsp;
+              <i class="icon icon-select"></i>
+              <div class="product-filter__list">
+                <p class="product-filter__list-item" >全部颜色</p>
+                
+                <p class="product-filter__list-item" >
+                  黄色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  白色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  黑色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  深灰色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  粉色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  红色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  蓝色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  绿色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  橙色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  裸色/黑色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  黑色/深蓝色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  黑色/白色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  深蓝色/银色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  黑色/裸色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  裸色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  黑色/金色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  紫色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  浅蓝色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  彩色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  灰色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  靛蓝色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  黑白色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  灰蓝色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  白/彩色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  黑/红色
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  灰/白
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  FQW
+                </p>
+                
+                <p class="product-filter__list-item">
+                  XOE
+                </p>
+                
+                <p class="product-filter__list-item">
+                  PDF
+                </p>
+                
+                <p class="product-filter__list-item">
+                  POF
+                </p>
+                
+                <p class="product-filter__list-item">
+                  GUX
+                </p>
+                
+                <p class="product-filter__list-item">
+                  GUX 
+                </p>
+                
+                <p class="product-filter__list-item">
+                  蓝灰色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  米色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  褐色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  土黄色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  浅粉色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  藏青色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  深蓝色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  HRT
+                </p>
+                
+                <p class="product-filter__list-item">
+                  166
+                </p>
+                
+                <p class="product-filter__list-item">
+                  522
+                </p>
+                
+                <p class="product-filter__list-item">
+                  ZTY
+                </p>
+                
+                <p class="product-filter__list-item">
+                  ZU7
+                </p>
+                
+                <p class="product-filter__list-item">
+                  绿松石色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  中灰色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  玫瑰色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  柠檬色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  卡其色
+                </p>
+                
+                <p class="product-filter__list-item">
+                  红色条纹
+                </p>
+                
+                <p class="product-filter__list-item">
+                  蓝色条纹
+                </p>
+                
+                <p class="product-filter__list-item">
+                  绿色条纹
+                </p>
+                
+                <p class="product-filter__list-item">
+                  灰/彩色
+                </p>
+                
+              </div>
+            </span>
+
+								<span class="product-filter__item">
+              <!-- 尺码&nbsp;&nbsp; -->
+              <!-- FIX: 无法多重条件筛选的问题 -->
+              尺码&nbsp;&nbsp;
+              <i class="icon icon-select"></i>
+              <div class="product-filter__list">
+                <p class="product-filter__list-item">全部尺码</p>
+                
+                <p class="product-filter__list-item">
+                  M
+                </p>
+                
+                <p class="product-filter__list-item">
+                  L
+                </p>
+                
+                <p class="product-filter__list-item">
+                  XL
+                </p>
+                
+                <p class="product-filter__list-item">
+                  7.0
+                </p>
+                
+                <p class="product-filter__list-item">
+                  1
+                </p>
+                
+                <p class="product-filter__list-item">
+                  2
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3
+                </p>
+                
+                <p class="product-filter__list-item">
+                  4
+                </p>
+                
+                <p class="product-filter__list-item">
+                  40
+                </p>
+                
+                <p class="product-filter__list-item">
+                  42
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  44
+                </p>
+                
+                <p class="product-filter__list-item">
+                  46
+                </p>
+                
+                <p class="product-filter__list-item">
+                  48
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  27
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  28
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  29
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  30
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  31
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  33
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  32
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  36
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  38
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  S
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  180/108B(L)
+                </p>
+                
+                <p class="product-filter__list-item" >
+                  175/104B(M)
+                </p>
+                
+                <p class="product-filter__list-item">
+                  185/112B(XL)
+                </p>
+                
+                <p class="product-filter__list-item">
+                  165/88A(M)
+                </p>
+                
+                <p class="product-filter__list-item">
+                  160/84A(s)
+                </p>
+                
+                <p class="product-filter__list-item">
+                  XXL
+                </p>
+                
+                <p class="product-filter__list-item">
+                  XS
+                </p>
+                
+                <p class="product-filter__list-item">
+                  XXS
+                </p>
+                
+                <p class="product-filter__list-item">
+                  25
+                </p>
+                
+                <p class="product-filter__list-item">
+                  26
+                </p>
+                
+                <p class="product-filter__list-item">
+                  38RG
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3332
+                </p>
+                
+                <p class="product-filter__list-item">
+                  38SH
+                </p>
+                
+                <p class="product-filter__list-item">
+                  15H2
+                </p>
+                
+                <p class="product-filter__list-item">
+                  15H4
+                </p>
+                
+                <p class="product-filter__list-item">
+                  17_4
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3334
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3232
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3432
+                </p>
+                
+                <p class="product-filter__list-item">
+                  155/64A(XS)
+                </p>
+                
+                <p class="product-filter__list-item">
+                  175/84B(33)
+                </p>
+                
+                <p class="product-filter__list-item">
+                  5
+                </p>
+                
+                <p class="product-filter__list-item">
+                  6
+                </p>
+                
+                <p class="product-filter__list-item">
+                  24
+                </p>
+                
+                <p class="product-filter__list-item">
+                  34
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3434
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3534
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3634
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3834
+                </p>
+                
+                <p class="product-filter__list-item">
+                  14H2
+                </p>
+                
+                <p class="product-filter__list-item">
+                  152
+                </p>
+                
+                <p class="product-filter__list-item">
+                  162
+                </p>
+                
+                <p class="product-filter__list-item">
+                  164
+                </p>
+                
+                <p class="product-filter__list-item">
+                  16H2
+                </p>
+                
+                <p class="product-filter__list-item">
+                  16H4
+                </p>
+                
+                <p class="product-filter__list-item">
+                  172
+                </p>
+                
+                <p class="product-filter__list-item">
+                  174
+                </p>
+                
+                <p class="product-filter__list-item">
+                  17H2
+                </p>
+                
+                <p class="product-filter__list-item">
+                  17H4
+                </p>
+                
+                <p class="product-filter__list-item">
+                  184
+                </p>
+                
+                <p class="product-filter__list-item">
+                  186
+                </p>
+                
+                <p class="product-filter__list-item">
+                  2932
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3030
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3032
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3130
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3132
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3234
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3330
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3532
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3632
+                </p>
+                
+                <p class="product-filter__list-item">
+                  4234
+                </p>
+                
+                <p class="product-filter__list-item">
+                  154
+                </p>
+                
+                <p class="product-filter__list-item">
+                  36SH
+                </p>
+                
+                <p class="product-filter__list-item">
+                  4034
+                </p>
+                
+                <p class="product-filter__list-item">
+                  14H0
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3230
+                </p>
+                
+                <p class="product-filter__list-item">
+                  3430
+                </p>
+                
+              </div>
+            </span>
+
+								<span class="product-filter__item">
+              <!-- 性别&nbsp;&nbsp; -->
+              <!-- FIX: 无法多重条件筛选的问题 -->
+              性别&nbsp;&nbsp;
+              <i class="icon icon-select"></i>
+              <div class="product-filter__list">
+                <p class="product-filter__list-item">全部性别</p>
+                
+                <p class="product-filter__list-item">
+                  女士
+                </p>
+                
+                <p class="product-filter__list-item">
+                  男士
+                </p>
+                
+              </div>
+            </span>
+
+								<span class="product-filter__item">
+              <!-- 销售标签&nbsp;&nbsp; -->
+              <!-- FIX: 无法多重条件筛选的问题 -->
+              销售标签&nbsp;&nbsp;
+              <i class="icon icon-select"></i>
+              <div class="product-filter__list">
+                <p class="product-filter__list-item">全部销售标签</p>
+                
+                <p class="product-filter__list-item">
+                  新品
+                </p>
+                
+              </div>
+            </span>
+
+							</div>
+						</div>
+						<div class="product-filter__sort">
+							<span class="product-filter__sort-item product-filter__sort-title">排序方式&nbsp;&nbsp;</span>
+							<span class="product-filter__item product-filter__sort-item">
+            <span class="product-filter__content">默认</span>
+							<i class="icon icon-select"></i>
+							<div class="product-filter__list">
+								<p class="product-filter__list-item">默认</p>
+								<p class="product-filter__list-item">价格从低到高</p>
+								<p class="product-filter__list-item">价格从高到低</p>
+							</div>
+							</span>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+          function getStyle(obj,attr){
+              if(obj.currentStyle){
+                  return obj.currentStyle[attr];
+              }else{
+              return getComputedStyle(obj,false)[attr];
+              }
+          }
+					var filterItem = document.getElementsByClassName("product-filter__item");
+          for(let i = 1; i<filterItem.length; i++){
+            var filterList = document.getElementsByClassName("product-filter__list");
+              filterItem[i].onclick = function () {
+                  let str = getStyle(filterList[i-1],"display");
+                  for(var j= 0;j<filterItem.length-1; j++){
+                    filterList[j].style.display = "none";
+                  }
+                  if(str == "none"){
+                    filterList[i-1].style.display = "block";
+                  }else if(str == "block"){
+                    filterList[i-1].style.display = "none";
+                  }
+              }
+          }
+          var filterItemList = document.getElementsByClassName("product-filter__list-item");
+          var productFilter__content = document.getElementsByClassName("product-filter__content");
+          for(let i = 0; i<filterItemList.length; i++){
+            filterItemList[i].onclick = function () {
+              if(filterItemList[i].parentNode.parentNode.firstElementChild.className == "product-filter__content"){
+                filterItemList[i].parentNode.parentNode.firstElementChild.innerHTML=filterItemList[i].innerHTML;
+              }
+            }
+          }
+				</script>
+				<!-- Child block with Brand Discount Message -->
+				<div class="product-list layout-center">
+					<div class="gallery-wrapper layout-center">
+						<div id="gallery3">
+							<div class="gallery">
+								<i></i>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0491540616a1555.html" target="_blank">
+											<img class="goods__img" src="img/moschino_J0491540616A1555_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_J0491540616A1555_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">黑色女针织连衣裙</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0491540616a1555.html?size=172" target="_blank">
+												<span class="goods__size ">36</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0491540616a1555.html?size=174" target="_blank">
+												<span class="goods__size ">38</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0491540616a1555.html?size=78" target="_blank">
+												<span class="goods__size ">40</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0491540616a1555.html?size=" target="_blank">
+												<span class="goods__size ">更多</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;4193 <span class="oldprice">￥&nbsp;5990</span>
+											<span class="discount">7折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0701914017a1485.html" target="_blank">
+											<img class="goods__img" src="img/moschino_A0701914017A1485_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_A0701914017A1485_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">灰色女式T恤</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0701914017a1485.html?size=220" target="_blank">
+												<span class="goods__size ">XXS</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0701914017a1485.html?size=203" target="_blank">
+												<span class="goods__size ">XS</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0701914017a1485.html?size=176" target="_blank">
+												<span class="goods__size goods__size--soldout">S</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0701914017a1485.html?size=" target="_blank">
+												<span class="goods__size ">更多</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;1393 <span class="oldprice">￥&nbsp;1990</span>
+											<span class="discount">7折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0301412817p1505.html" target="_blank">
+											<img class="goods__img" src="img/moschino_A0301412817P1505_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_A0301412817P1505_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">灰-白色女裤</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0301412817p1505.html?size=176" target="_blank">
+												<span class="goods__size ">S</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0301412817p1505.html?size=3" target="_blank">
+												<span class="goods__size ">M</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0301412817p1505.html?size=4" target="_blank">
+												<span class="goods__size ">L</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;1995 <span class="oldprice">￥&nbsp;3990</span>
+											<span class="discount">5折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-v1706552717a1555.html" target="_blank">
+											<img class="goods__img" src="img/moschino_V1706552717A1555_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_V1706552717A1555_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">黑色女休闲上衣</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v1706552717a1555.html?size=174" target="_blank">
+												<span class="goods__size goods__size--soldout">38</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v1706552717a1555.html?size=78" target="_blank">
+												<span class="goods__size goods__size--soldout">40</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v1706552717a1555.html?size=79" target="_blank">
+												<span class="goods__size ">42</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;6223 <span class="oldprice">￥&nbsp;8890</span>
+											<span class="discount">7折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3115.html" target="_blank">
+											<img class="goods__img" src="img/moschino_V0492550117A3115_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_V0492550117A3115_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">红色女针织连衣裙</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3115.html?size=220" target="_blank">
+												<span class="goods__size ">XXS</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3115.html?size=203" target="_blank">
+												<span class="goods__size ">XS</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3115.html?size=176" target="_blank">
+												<span class="goods__size ">S</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3115.html?size=" target="_blank">
+												<span class="goods__size ">更多</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;3703 <span class="oldprice">￥&nbsp;5290</span>
+											<span class="discount">7折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item" mars_exposure="productlist_product_moschino_J0182040017P0112">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0182040017p0112.html" target="_blank">
+											<img class="goods__img" src="img/moschino_J0182040017P0112_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_J0182040017P0112_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">红色女针织半裙</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0182040017p0112.html?size=172" target="_blank">
+												<span class="goods__size ">36</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0182040017p0112.html?size=174" target="_blank">
+												<span class="goods__size ">38</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0182040017p0112.html?size=78" target="_blank">
+												<span class="goods__size ">40</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-j0182040017p0112.html?size=" target="_blank">
+												<span class="goods__size ">更多</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;1845 <span class="oldprice">￥&nbsp;3690</span>
+											<span class="discount">5折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0404053417p1395.html" target="_blank">
+											<img class="goods__img" src="img/moschino_A0404053417P1395_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_A0404053417P1395_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">绿色女连衣裙</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0404053417p1395.html?size=172" target="_blank">
+												<span class="goods__size ">36</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0404053417p1395.html?size=174" target="_blank">
+												<span class="goods__size ">38</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;3845 <span class="oldprice">￥&nbsp;7690</span>
+											<span class="discount">5折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0470542416a2114.html" target="_blank">
+											<img class="goods__img" src="img/moschino_A0470542416A2114_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_A0470542416A2114_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">黑-红色女连衣裙</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0470542416a2114.html?size=174" target="_blank">
+												<span class="goods__size ">38</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0470542416a2114.html?size=78" target="_blank">
+												<span class="goods__size ">40</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0470542416a2114.html?size=79" target="_blank">
+												<span class="goods__size ">42</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0470542416a2114.html?size=" target="_blank">
+												<span class="goods__size ">更多</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;3297 <span class="oldprice">￥&nbsp;10990</span>
+											<span class="discount">3折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0106555716a1002.html" target="_blank">
+											<img class="goods__img" src="img/moschino_A0106555716A1002_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_A0106555716A1002_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">白-彩色女半身裙</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0106555716a1002.html?size=174" target="_blank">
+												<span class="goods__size ">38</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0106555716a1002.html?size=78" target="_blank">
+												<span class="goods__size ">40</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0106555716a1002.html?size=79" target="_blank">
+												<span class="goods__size ">42</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0106555716a1002.html?size=" target="_blank">
+												<span class="goods__size ">更多</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;1490 <span class="oldprice">￥&nbsp;6990</span>
+											<span class="discount">3折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3495.html" target="_blank">
+											<img class="goods__img" src="img/moschino_V0492550117A3495_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_V0492550117A3495_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">灰色女针织连衣裙</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3495.html?size=220" target="_blank">
+												<span class="goods__size ">XXS</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3495.html?size=203" target="_blank">
+												<span class="goods__size ">XS</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3495.html?size=176" target="_blank">
+												<span class="goods__size ">S</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0492550117a3495.html?size=" target="_blank">
+												<span class="goods__size ">更多</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;3703 <span class="oldprice">￥&nbsp;5290</span>
+											<span class="discount">7折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item" mars_exposure="productlist_product_moschino_V0442556517A1115">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0442556517a1115.html" target="_blank">
+											<img class="goods__img" src="img/moschino_V0442556517A1115_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_V0442556517A1115_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">红色女连衣裙</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0442556517a1115.html?size=172" target="_blank">
+												<span class="goods__size ">36</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0442556517a1115.html?size=174" target="_blank">
+												<span class="goods__size goods__size--soldout">38</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0442556517a1115.html?size=78" target="_blank">
+												<span class="goods__size ">40</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-v0442556517a1115.html?size=" target="_blank">
+												<span class="goods__size ">更多</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;5523 <span class="oldprice">￥&nbsp;7890</span>
+											<span class="discount">7折</span>
+										</p>
+									</div>
+								</div>
+								<div class="gallery__item">
+									<div class="goods goods--">
+										<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0414053417p1555.html" target="_blank">
+											<img class="goods__img" src="img/moschino_A0414053417P1555_001.JPG">
+											<img class="goods__img--detail" src="img/moschino_A0414053417P1555_002.JPG">
+										</a>
+										<p class="goods__text goods__brand">MOSCHINO</p>
+										<p class="goods__text goods__name">黑色女连衣裙</p>
+										<div class="goods__sizes">
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0414053417p1555.html?size=172" target="_blank">
+												<span class="goods__size ">36</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0414053417p1555.html?size=174" target="_blank">
+												<span class="goods__size ">38</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0414053417p1555.html?size=78" target="_blank">
+												<span class="goods__size ">40</span>
+											</a>
+											<a href="https://www.fvoutlet.com/index.php/detail-moschino-a0414053417p1555.html?size=" target="_blank">
+												<span class="goods__size ">更多</span>
+											</a>
+										</div>
+										<p class="goods__text goods__price goods__price--special">
+											￥&nbsp;4195 <span class="oldprice">￥&nbsp;8390</span>
+											<span class="discount">5折</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="load-gallery" c-click="loadGallery" c-show="canLoadGallery" style="display: none;">加载更多</div>
+				</div>
+				<div class="product-nav layout-center">
+					<p class="btn--border-black btn--border-black--disabled product-nav__item" disable="">上一页</p>
+					<p class="btn--border-black product-nav__item current btn--border-black--active">1</p>
+					<a class="btn--border-black product-nav__item" href="https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7&amp;p=2">2</a>
+					<a class="btn--border-black product-nav__item" href="https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7&amp;p=3">3</a>
+					<a class="btn--border-black product-nav__item" href="https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7&amp;p=4">4</a>
+					<a class="btn--border-black product-nav__item" href="https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7&amp;p=5">5</a>
+					<a href="https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7&amp;p=2" class="btn--border-black product-nav__item">下一页</a>
+				</div>
+
+			</div>
+			<div class="gallery-wrapper layout-center">
+				<div id="gallery2">
+					<div class="gallery">
+						<div class="gallery__title">
+							<p class="gallery__text">猜你喜欢</p>
+						</div>
+						<div class="gallery__item" mars_exposure="productlist_product_links-of-london_5020-2719SILVER">
+							<div class="goods goods--">
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/1760/s/links-of-london-5020-2719silver/category/7/" target="_blank">
+									<img class="goods__img" src="img/links-of-london_5020.2719SILVER_001.jpg">
+									<img class="goods__img--detail" src="img/links-of-london_5020.2719SILVER_002.jpg">
+								</a>
+								<p class="goods__text goods__brand">LINKS OF LONDON</p>
+								<p class="goods__text goods__name">时尚S925银女百搭长款项链饰品 </p>
+								<div class="goods__sizes">
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/1760/s/links-of-london-5020-2719silver/category/7/?size=17" target="_blank">
+										<span class="goods__size ">均码</span>
+									</a>
+								</div>
+								<p class="goods__text goods__price goods__price--special">
+									￥&nbsp;2055 <span class="oldprice">￥&nbsp;4110</span>
+									<span class="discount">5折</span>
+								</p>
+							</div>
+						</div>
+						<div class="gallery__item">
+							<div class="goods goods--">
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4523/s/detail-lacoste-ph2047-xoe/category/7/" target="_blank">
+									<img class="goods__img" src="img/lacoste_PH2047-XOE_001.jpg">
+									<img class="goods__img--detail" src="img/lacoste_PH2047-XOE_002.jpg">
+								</a>
+								<p class="goods__text goods__brand">Lacoste</p>
+								<p class="goods__text goods__name">男式T恤衫</p>
+								<div class="goods__sizes">
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4523/s/detail-lacoste-ph2047-xoe/category/7/?size=70" target="_blank">
+										<span class="goods__size ">3</span>
+									</a>
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4523/s/detail-lacoste-ph2047-xoe/category/7/?size=75" target="_blank">
+										<span class="goods__size ">4</span>
+									</a>
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4523/s/detail-lacoste-ph2047-xoe/category/7/?size=278" target="_blank">
+										<span class="goods__size ">5</span>
+									</a>
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4523/s/detail-lacoste-ph2047-xoe/category/7/?size=" target="_blank">
+										<span class="goods__size ">更多</span>
+									</a>
+								</div>
+								<p class="goods__text goods__price goods__price--special">
+									￥&nbsp;654 <span class="oldprice">￥&nbsp;1090</span>
+									<span class="discount">6折</span>
+								</p>
+							</div>
+						</div>
+						<div class="gallery__item">
+							<div class="goods goods--">
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4995/s/detail-calvin-klein-k2u291l6/category/7/" target="_blank">
+									<img class="goods__img" src="img/calvin-klein_K2U291L6_001.JPG">
+									<img class="goods__img--detail" src="img/calvin-klein_K2U291L6_002.JPG">
+								</a>
+								<p class="goods__text goods__brand">CALVIN KLEIN</p>
+								<p class="goods__text goods__name">CK表skir迷你裙系列银色三眼计时白面白色小牛皮多圈表带</p>
+								<div class="goods__sizes">
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4995/s/detail-calvin-klein-k2u291l6/category/7/?size=17" target="_blank">
+										<span class="goods__size ">均码</span>
+									</a>
+								</div>
+								<p class="goods__text goods__price goods__price--special">
+									￥&nbsp;1898 <span class="oldprice">￥&nbsp;3450</span>
+									<span class="discount">6折</span>
+								</p>
+							</div>
+						</div>
+						<div class="gallery__item">
+							<div class="goods goods--new">
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4632/s/detail-inniu_INN806PNAVYBLUE/category/7/" target="_blank">
+									<img class="goods__img" src="img/inniu_INN806PNAVYBLUE_001.jpg" mars_sead="productlist_product_click_inniu_INN806PNAVYBLUE">
+									<img class="goods__img--detail" src="img/inniu_INN806PNAVYBLUE_002.jpg" mars_sead="productlist_product_click_inniu_INN806PNAVYBLUE">
+								</a>
+								<p class="goods__text goods__brand">INNIU</p>
+								<p class="goods__text goods__name">藏青蓝女士高跟鞋</p>
+								<div class="goods__sizes">
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4632/s/detail-inniu_INN806PNAVYBLUE/category/7/?size=287" target="_blank">
+										<span class="goods__size ">37.5</span>
+									</a>
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4632/s/detail-inniu_INN806PNAVYBLUE/category/7/?size=172" target="_blank">
+										<span class="goods__size ">36</span>
+									</a>
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4632/s/detail-inniu_INN806PNAVYBLUE/category/7/?size=173" target="_blank">
+										<span class="goods__size goods__size--soldout">37</span>
+									</a>
+									<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/4632/s/detail-inniu_INN806PNAVYBLUE/category/7/?size=" target="_blank">
+										<span class="goods__size ">更多</span>
+									</a>
+								</div>
+								<p class="goods__text goods__price goods__price--special">
+									￥&nbsp;1280 <span class="oldprice">￥&nbsp;3980</span>
+									<span class="discount">4折</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- page footer -->
+
+		<!-- footer -->
+		<div class="page-footer">
+			<!-- footer.html-->
+			<div class="footer-inner">
+				<div class="footer-left">
+					<div class="footer-list">
+						<div class="item">
+							<h3>客服帮助<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="tel:">4006946868</a>
+								</p>
+								<p>
+									<a href="mailto:customerservice@fvoutlet.com">customerservice@fvoutlet.com</a>
+								</p>
+								<p>周一至周日 8:00 - 21:30</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-list">
+						<div class="item">
+							<h3>在线购物<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="/help#term">退货退款</a>
+								</p>
+								<p>
+									<a href="/help#faq">常见问题</a>
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<h3>联系我们<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="/term#privacy">隐私条款</a>
+								</p>
+								<p>
+									<a href="/term#service">法律条款</a>
+								</p>
+								<p>
+									<a href="/term#disclaimer">免责声明</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="about">
+						<h3>关注我们<span></span></h3>
+						<div class="content"><em class="icon icon-wechat">1</em>
+							<a href="https://weibo.com/p/1006062130024800"><em class="icon icon-weibo">1</em></a>
+						</div>
+					</div>
+				</div>
+				<div class="intro">
+					<h3>探索佛罗伦萨小镇线下店铺<span></span></h3>
+					<div class="desc content">
+						<p>佛罗伦萨小镇是拥有超百家意大利奢侈品牌及优质时尚品牌，全年提供无可抗拒的购物折扣，为您带来前所未有的度假式购物体验</p>
+						<p>
+							<a href="/outlet/sh"><span>上海</span></a>
+							<a href="/outlet/tj"><span>天津</span></a>
+							<a href="/outlet/gz"><span>广州</span></a>
+							<a href="/outlet/hk"><span>香港</span></a>
+							<a href="/outlet/wh"><span>武汉</span></a>
+							<a href="/outlet/cd"><span>成都</span></a>
+						</p>
+					</div>
+					<p class="copyright">&copy; 2017 佛罗伦萨小镇版权所有
+						<a href="http://www.miibeian.gov.cn/">沪ICP备17033202号-1</a>
+						<div style="padding:20px 0;">
+							<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502007274" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="img/beianbgs.png" style="float:left;width: inherit;" />
+								<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011502007274号</p>
+							</a>
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+
+</html>

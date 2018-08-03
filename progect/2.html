@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" id="top" class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />`
+		<title>佛罗伦萨小镇</title>
+		<meta name="description" content="佛罗伦萨小镇" />
+		<meta name="keywords" content="佛罗伦萨小镇" />
+		<meta name="robots" content="INDEX,FOLLOW" />
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<link rel="icon" href=" img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="carousel.css">
+		<link rel="stylesheet" href="css/core.css" />
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="page-header" id="page-header">
+			<div class="main-nav">
+				<a href="/">
+					<div class="logo logoa"></div>
+				</a>
+				<div class="nav">
+					<ul class="vice">
+						<li>
+							<a href="https://www.fvoutlet.com/index.php/customer/account/login/?redirect_uri=/">请登录</a><span></span></li>
+						<li>
+							<a href="https://www.fvoutlet.com/index.php/customer/account/create/?type=reg">免费注册</a><span></span></li>
+						<li>
+							<a href="/outlet/sh">探索佛罗伦萨小<span></span></a>
+						</li>
+						<li>
+							<a href="https://www.fvoutlet.com/index.php/sales/order/history/">追踪我的订单</a><span></span></li>
+						<li>
+							<a class="customer-service" href="/help">客服帮助</a>
+							<div class="customer-service-modal">
+								<p class="text">需要帮助？客服热线</p>
+								<a class="phone" href="tel:4006946868">4006946868</a>
+								<p class="time">周一至周日 8:00 - 21:30</p>
+							</div>
+						</li>
+					</ul>
+					<div class="main">
+						<ul class="categories">
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7">服饰</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-bags.html?from=nav_8">包袋</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-shoes.html?from=nav_5">鞋履</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-accessories.html?from=nav_6">配饰</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-jewelry.html?from=nav_41">首饰</a>
+							</li>
+						</ul>
+						<div class="category-panel">
+							<div class="category-panel__wrapper">
+							    <div class="category-panel__item">
+							      <p class="category-panel__title">上装</p> 
+							    </div>
+							    <div class="category-panel__item">
+							      <p class="category-panel__title">下装</p>
+							     </div>
+							    <div class="category-panel__item">
+							      <p class="category-panel__title">连衣裙</p>				
+							    </div>
+							    <div class="category-panel__item">
+							      <p class="category-panel__title">内衣</p>
+							      <p class="category-panel__child">文胸</p>
+							      <p class="category-panel__child">底裤</p>
+							      <p class="category-panel__child">睡衣</p>
+							      <p class="category-panel__child">泳衣</p>    
+							    </div>
+							</div>
+						</div>
+						<!-- <ul class="extra" style="display: none;">
+				          <a title="心愿单" href="/wishlist" class="icon icon-like"></a>
+				          <div class="icon icon-search active" title="搜索">
+				          </div>
+				          <a title="购物袋" href="https://www.fvoutlet.com/index.php/checkout/cart/" class="icon-cart-wrapper">
+				            <div class="icon icon-cart"></div>
+				          </a>
+				        </ul> -->
+						<ul class="extra">
+							<a link" title="心愿单" href="/wishlist" class="icon icon-like"></a>
+							<div class="icon icon-search active"  title="搜索">
+							</div>
+							<input id = "searchinp" placeholder="搜索" style="width: 0;">
+							<a " title="购物袋" href="https://www.fvoutlet.com/index.php/checkout/cart/" class="icon-cart-wrapper">
+								<div class="icon icon-cart"></div>
+							</a>
+						</ul>
+						<script type="text/javascript">
+							$(function(){
+								$(".icon-search").click(2000,function(){
+									let widthl = parseInt($("#searchinp")[0].style.width);
+									console.log(widthl);
+									if(widthl == 124){
+										$("#searchinp").css("width","0px");
+										
+									}else if(widthl == 0){
+										$("#searchinp").css("width","124px");
+										
+									}
+									
+								});
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <script type="text/javascript">
+			$(function(){
+				$(".categories li").mouseover(
+					function () {
+					    $(".category-panel").css({"display":"block"});
+   				 	 	$(".categories li").mouseout(function(){$(".category-panel").css("display","none");});
+   				 		}
+   					)
+				});
+		</script> -->
+		<script type="text/javascript">
+			$(function(){
+				$(".categories li").mouseover(
+					function () {
+					    $(".category-panel").css({
+					    	"top":"110px",
+					    	"opacity":"1"
+						});
+   				 		}
+   					);
+				$(".category-panel").mouseover(
+					function () {
+					    $(".category-panel").css({
+					    	"top":"110px",
+					    	"opacity":"1"
+						});
+   				 		}
+   					);
+				$(".category-panel").mouseout(
+					function () {
+					    $(".category-panel").css({
+					    	"top":"-1000px",
+					    	"opacity":"0"
+						});
+   				 		}
+   					);
+				$(".categories li").mouseout(
+					function () {
+					    $(".category-panel").css({
+					    	"top":"-1000px",
+					    	"opacity":"0"
+						});
+   				 		}
+   					)
+				});
+		</script>
+		<script type="text/javascript">
+			var logoa = document.getElementsByClassName("logoa");
+			var vice = document.getElementsByClassName("vice");
+			var main = document.getElementsByClassName("main-nav");
+			var categoryPanel =  document.getElementsByClassName("category-panel");
+			console.log(categoryPanel);
+			window.onscroll = function(){
+				var _scroll = document.body.scrollTop || document.documentElement.scrollTop;
+				if(_scroll >= 1000){
+					logoa[0].style.backgroundImage='url(img/logo-small.png)';
+					logoa[0].style.width = "120px" ;
+					logoa[0].style.height = "66px" ;
+					vice[0].style.display = "none";
+					main[0].style.paddingTop = "5px";
+					main[0].style.paddingBottom = "5px";
+					categoryPanel[0].style.top = "77px";
+					console.log(categoryPanel[0].style.top);
+					$(function(){
+						$(".categories li").mouseover(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"77px",
+							    	"opacity":"1"
+								});
+		   				 		}
+		   					);
+						$(".category-panel").mouseover(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"77px",
+							    	"opacity":"1"
+								});
+		   				 		}
+		   					);
+						$(".category-panel").mouseout(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"-1000px",
+							    	"opacity":"0"
+								});
+		   				 		}
+		   					);
+						$(".categories li").mouseout(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"-1000px",
+							    	"opacity":"0"
+								});
+		   				 		}
+		   					)
+						});
+				} else {
+					logoa[0].style.backgroundImage='url(img/logo.png)';
+					logoa[0].style.width = "150px" ;
+					logoa[0].style.height = "82px" ;
+					vice[0].style.display = "block";
+					main[0].style.paddingTop = "14px";
+					main[0].style.paddingBottom = "14px";
+					categoryPanel[0].style.top = "110px";
+					$(function(){
+						$(".categories li").mouseover(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"110px",
+							    	"opacity":"1"
+								});
+		   				 		}
+		   					);
+						$(".category-panel").mouseover(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"110px",
+							    	"opacity":"1"
+								});
+		   				 		}
+		   					);
+						$(".category-panel").mouseout(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"-1000px",
+							    	"opacity":"0"
+								});
+		   				 		}
+		   					);
+						$(".categories li").mouseout(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"-1000px",
+							    	"opacity":"0"
+								});
+		   				 		}
+		   					)
+						});
+				}
+			}
+		</script>
+		<div class="index">
+			<div class="page-home">
+				<div class="img-bg" style="background-image:url(img/16_14.jpg);"></div>
+				<div class="inner">
+					<h2>开启全新线上购物之旅 FVOUTLET.COM</h2>
+					<h1>欢迎莅临佛罗伦萨小镇线上商城</h1>
+					<p></p>
+				</div>
+				<div class="arrow-down"></div>
+			</div>
+			<!-- 首页轮播图运营位 -->
+			<div id="carousel">
+				<ul id="list">
+					<li style="background: url(img/1.jpg); background-size: cover;"></li>
+					<li style="background: url(img/2.jpg); background-size: cover;"></li>
+					<li style="background: url(img/3.jpg); background-size: cover;"></li>
+				</ul>
+				<ul id="direction-btn">
+					<li href="javascript:;" id="left-btn"></li>
+					<li href="javascript:;" id="right-btn"></li>
+				</ul>
+				<div id="small-btn">
+					<a href="javascript:;" class="active"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
+			</div>
+			<script src="common.js"></script>
+			<script>
+				var
+					carousel = $('carousel'),
+					list = $('list'),
+					listLi = list.children,
+					directionBtn = $('direction-btn'),
+					leftBtn = $('left-btn'),
+					rightBtn = $('right-btn'),
+					smallBtn = $('small-btn'),
+					smallBtnA = Array.from(smallBtn.children),
+					index = 0, // 图片
+					dotIndex = 0, // 小按钮
+					timer = null;
+
+				const LI_WIDTH = document.body.clientWidth;
+				// 复制第一张放到最后的位置
+				list.innerHTML += listLi[0].outerHTML;
+				// 改变宽度
+				list.style.width = listLi.length * LI_WIDTH + 'px';
+				carousel.onmouseover = function() {
+					clearInterval(timer);
+					directionBtn.style.display = "block";
+				};
+				carousel.onmouseout = function() {
+					autoMove();
+					directionBtn.style.display = "none";
+				};
+				// 左侧按钮
+				leftBtn.onclick = function() {
+					// 针对轮播图
+					index--;
+					if(index < 0) {
+						index = listLi.length - 2;
+						list.style.left = -(listLi.length - 1) * LI_WIDTH + 'px';
+					}
+					bufferMove(list, {
+						left: -index * LI_WIDTH
+					});
+					// 针对小按钮
+					dotIndex--;
+					if(dotIndex < 0) {
+						dotIndex = smallBtnA.length - 1;
+					}
+					smallBtnA.forEach(v => v.classList.remove('active'));
+					smallBtnA[dotIndex].classList.add('active');
+				};
+				// 右侧按钮
+				rightBtn.onclick = function() {
+					rightMove();
+				};
+				// 给小按钮添加鼠标进入事件
+				smallBtnA.forEach((v, k) => {
+					v.onmouseover = function() {
+						dotIndex = k;
+						smallBtnA.forEach(v => v.classList.remove('active'));
+						smallBtnA[dotIndex].classList.add('active');
+						index = k;
+						bufferMove(list, {
+							left: -index * LI_WIDTH
+						});
+					};
+				});
+				autoMove();
+
+				function autoMove() {
+					timer = setInterval(function() {
+						rightMove();
+					}, 3000);
+				}
+
+				function rightMove() {
+					// 针对轮播图
+					index++;
+					if(index >= listLi.length) {
+						index = 1;
+						list.style.left = 0;
+					}
+					bufferMove(list, {
+						left: -index * LI_WIDTH
+					});
+					// 针对小按钮
+					dotIndex++;
+					if(dotIndex >= smallBtnA.length) {
+						dotIndex = 0;
+					}
+					smallBtnA.forEach(v => v.classList.remove('active'));
+					smallBtnA[dotIndex].classList.add('active');
+				}
+			</script>
+			<!-- 首页品牌广告位 -->
+			<div id="block-4" mars_exposure="index_homepage_operation_2">
+				<div class="block4-wrapper" >
+					<div class="swiper-container--4-pc">
+						<div class="swiper-wrapper swiper-no-swiping">
+							<div class="swiper-slide">
+								<a class="swiper-img" href="shop/brand/home/code/versace?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/links_1.jpg" /></a>
+								<a class="swiper-img" href=" shop/brand/home/code/salvatore-ferragamo?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/Ferragamo_logo_1.jpg" /></a>
+								<a class="swiper-img" href="https://www.fvoutlet.com/shop/brand/home/code/mulberry?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/270x160_4.jpg" /></a>
+								<a class="swiper-img" href="https://www.fvoutlet.com/shop/brand/home/code/maxmarafashiongroup?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/maxmarafg_2.jpg" /></a>
+								<a class="swiper-img" href="shop/brand/home/code/moschino?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/logo_.jpg" /></a>
+								<a class="swiper-img" href="https://www.fvoutlet.com/index.php/shop/brand/home/code/calvin-klein/?p=1&amp;from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/ck_logo_slider.jpg" /></a>
+								<a class="swiper-img" href="shop/brand/home/code/la-perla?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/la_perla_logo20180104.jpg" /></a>
+								<a class="swiper-img" href="https://www.fvoutlet.com/shop/brand/home/code/inniu?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/logo_7.jpg" /></a>
+							</div>
+							<div class="swiper-slide" id="con">
+								<a class="swiper-img" href="shop/brand/home/code/lacoste?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/WeChat_Image_20180312142807.jpg" /></a>
+								<a class="swiper-img" href="https://www.fvoutlet.com/index.php/shop/brand/home/code/guess/?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/links_3.jpg" /></a>
+								<a class="swiper-img" href="https://www.fvoutlet.com/index.php/shop/brand/home/code/follifollie/?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/FOLLI.jpg" /></a>
+								<a class="swiper-img" href="shop/brand/home/code/links-of-london?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/links_of_london_logo_pictures.jpg" /></a>
+								<a class="swiper-img" href="shop/brand/home/code/brooks-brothers?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/BB_logo_1.jpg" /></a>
+								<a class="swiper-img" href="https://www.fvoutlet.com/shop/brand/home/code/fv-x-tango?from=index_homepage_operation_2" target="_blank" "><img class="img img-with-shadow" src="img/FV_X_Tango_Banner_2.jpg" /></a>
+							</div>
+						</div>
+						<div class="swiper-pagination swiper-slide-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+					</div>
+				</div>
+				<div class="view-more">更多品牌</div>
+			</div>
+			<script src="js/jquery-1.11.3.js"></script>
+			<!-- <script type="text/javascript">
+            	$('.view-more').click(function() {
+            		alert(111);
+                	$('#con').slideUp(2000,'swing',function() {
+                    	
+                	});
+            	});
+        	</script> -->
+			<script type="text/javascript">
+				// $(function(){
+				// 	$(".view-more").click(function(){
+				// 		$("#con").toggle(2000,'swing',function(){
+				// 			let str = $(".view-more")[0].innerHTML;
+				// 			$(".view-more")[0].innerHTML= str=="收起"?"更多品牌":"收起";
+				// 		});
+				// 	});
+				// });
+				$(function(){
+					$(".view-more").click(function(){
+						let str = $(".view-more")[0].innerHTML;
+						if(str=="更多品牌"){
+							$("#con").slideDown(2000,function(){
+								let str = $(".view-more")[0].innerHTML;
+								$(".view-more")[0].innerHTML = "收起";
+							});
+						}else if(str=="收起"){
+							$("#con").slideUp(2000,function(){
+								$(".view-more")[0].innerHTML = "更多品牌";
+							});
+						}
+					});
+				});
+			</script>
+			<!-- 首页内容运营位 -->
+			<div class="layout-center" id="block-5">
+				<div class="topic-wrapper">
+					<div onclick="window.open('https://www.fvoutlet.com/index.php/category-jewelry.html?from=nav_41&amp;from=index_homepage_operation_3', '_self')" class="topic topic--withdesc topic--m img-with-shadow"><img class="topic__img img" src="https://www.fvoutlet.com/media/wysiwyg/vipcms/32_8.jpg" />
+						<div class="topic__desc">
+							<p class="topic__desc-text" style="color:">
+								<span class="topic__desc-title">“饰”髦入夏</span>
+								<br>缤纷夏日 倾心之选</p>
+							<p class="btn btn--border-white" style="color:">即刻选购</p>
+						</div>
+					</div>
+					<div onclick="window.open('https://www.fvoutlet.com/index.php/category-bags.html?from=nav_8&amp;from=index_homepage_operation_4', '_self')" class="topic topic--withdesc topic--m img-with-shadow"><img class="topic__img img" src="https://www.fvoutlet.com/media/wysiwyg/vipcms/12used.jpg" />
+						<div class="topic__desc">
+							<p class="topic__desc-text" style="color:">
+								<span class="topic__desc-title">有我“包”伴</span>
+								<br>活力夏日 盛夏美包</p>
+							<p class="btn btn--border-white" style="color:">即刻选购</p>
+						</div>
+					</div>
+					<div onclick="window.open('https://www.fvoutlet.com/index.php/category-shoes.html?from=nav_5&amp;from=index_homepage_operation_5', '_self')" class="topic topic--withdesc topic--m img-with-shadow"><img class="topic__img img" src="https://www.fvoutlet.com/media/wysiwyg/vipcms/14_19.jpg" />
+						<div class="topic__desc">
+							<p class="topic__desc-text" style="color:">
+								<span class="topic__desc-title">享受舒适</span>
+								<br>轻轻松松走好每一步</p>
+							<p class="btn btn--border-white" style="color:">即刻选购</p>
+						</div>
+					</div>
+					<div onclick="window.open('https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7&amp;from=index_homepage_operation_6', '_self')" class="topic topic--withdesc topic--m img-with-shadow"><img class="topic__img img" src="https://www.fvoutlet.com/media/wysiwyg/vipcms/19_26.jpg" />
+						<div class="topic__desc">
+							<p class="topic__desc-text" style="color:">
+								<span class="topic__desc-title">衣袂飘飘</span>
+								<br>美丽自在 气质由心</p>
+							<p class="btn btn--border-white" style="color:">即刻选购</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="block-6">
+				<div class="shop">
+					<p class="shop__title">佛罗伦萨小镇线下门店</p>
+					<p class="shop__text">为中国消费者带来前所未有的购物体验，为家人、朋友和爱侣提供全日购物享受的最佳选择</p>
+					<a href="/outlet/sh">
+						<p class="btn btn--border-black">立即探索</p>
+					</a>
+				</div>
+				<div class="logo-mail-wrapper">
+					<div class="logo-wrapper">
+						<div class="logo"><img class="logo__icon" src="img/07-1.png">
+							<p class="logo__desc">全球奢品<span class="logo__title">精选</span></p>
+						</div>
+						<div class="logo"><img class="logo__icon" src="img/07-2.png">
+							<p class="logo__desc">满688<span class="logo__title">免运费</span></p>
+						</div>
+						<div class="logo"><img class="logo__icon" src="img/07-3.png">
+							<p class="logo__desc">每晚8点<span class="logo__title">抢新机</span></p>
+						</div>
+						<div class="logo"><img class="logo__icon" src="img/07-4.png">
+							<p class="logo__desc">7天无理由<span class="logo__title">退货</span></p>
+						</div>
+					</div>
+					<div class="mail-wrapper">
+						<div class="mail mail--hd">
+							<p class="mail__text mail__title">订阅最新流行资讯</p>
+							<div class="inp-group">
+								<div class="mail__form">
+									<input class="mail__input" type="text" placeholder="请输入电子邮箱地址" data-rule="email|disinput">
+									<p class="mail__confirm btn btn--red">确认</p>
+								</div>
+							</div>
+							<div class="mail__check">
+								<p class="mail__text">
+									<label class="inp-checkbox" for="agree1">
+                <input id="agree1" type="checkbox" checked="checked"><span></span>
+              </label>注册即代表您同意
+									<a class="mail__link" href="/term#privacy">隐私条例&协议</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- page footer -->
+
+		<!-- footer -->
+		<div class="page-footer">
+			<!-- footer.html-->
+			<div class="footer-inner">
+				<div class="footer-left">
+					<div class="footer-list">
+						<div class="item">
+							<h3>客服帮助<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="tel:">4006946868</a>
+								</p>
+								<p>
+									<a href="mailto:customerservice@fvoutlet.com">customerservice@fvoutlet.com</a>
+								</p>
+								<p>周一至周日 8:00 - 21:30</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-list">
+						<div class="item">
+							<h3>在线购物<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="/help#term">退货退款</a>
+								</p>
+								<p>
+									<a href="/help#faq">常见问题</a>
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<h3>联系我们<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="/term#privacy">隐私条款</a>
+								</p>
+								<p>
+									<a href="/term#service">法律条款</a>
+								</p>
+								<p>
+									<a href="/term#disclaimer">免责声明</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="about">
+						<h3>关注我们<span></span></h3>
+						<div class="content"><em class="icon icon-wechat">1</em>
+							<a href="https://weibo.com/p/1006062130024800"><em class="icon icon-weibo">1</em></a>
+						</div>
+					</div>
+				</div>
+				<div class="intro">
+					<h3>探索佛罗伦萨小镇线下店铺<span></span></h3>
+					<div class="desc content">
+						<p>佛罗伦萨小镇是拥有超百家意大利奢侈品牌及优质时尚品牌，全年提供无可抗拒的购物折扣，为您带来前所未有的度假式购物体验</p>
+						<p>
+							<a href="/outlet/sh"><span>上海</span></a>
+							<a href="/outlet/tj"><span>天津</span></a>
+							<a href="/outlet/gz"><span>广州</span></a>
+							<a href="/outlet/hk"><span>香港</span></a>
+							<a href="/outlet/wh"><span>武汉</span></a>
+							<a href="/outlet/cd"><span>成都</span></a>
+						</p>
+					</div>
+					<p class="copyright">&copy; 2017 佛罗伦萨小镇版权所有
+						<a href="http://www.miibeian.gov.cn/">沪ICP备17033202号-1</a>
+						<div style="padding:20px 0;">
+							<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502007274" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="img/beianbgs.png" style="float:left;width: inherit;" />
+								<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011502007274号</p>
+							</a>
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
