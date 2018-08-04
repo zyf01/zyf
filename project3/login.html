@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" id="top" class="no-js">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>客户登录</title>
+		<meta name="description" content="佛罗伦萨小镇" />
+		<meta name="keywords" content="佛罗伦萨小镇" />
+		<meta name="robots" content="INDEX,FOLLOW" />
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<link rel="icon" href=" img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/2.css" />
+	</head>
+
+	<body class=" customer-account-login pc">
+		<!-- page content header -->
+		<!-- page content -->
+		<div class="login-box"><img class="img" src="img/bg.jpg">
+			<a class="logo" href="/"></a>
+			<div class="con j-con login" id="login" style="display: block">
+				<div class="column">
+					<h2>登录</h2>
+					<div class="inp-group mobile">
+						<label class="inp-label" for="">* 手机号码</label>
+						<input class="f-control" type="tel" name="mobile" placeholder="请输入您的手机号" maxlength="11">
+					</div>
+					<div class="inp-group">
+						<label class="inp-label" for="">* 请输入6位短信验证码</label>
+						<input class="f-control" type="tel" name="rndcode" placeholder="" maxlength="6">
+						<a class="inp-pos--txt" id="get_captcha_01" href="javascript:;">发送验证码</a>
+					</div>
+					<div class="bottom">
+						<div class="fl">
+							<a href="https://www.fvoutlet.com/index.php/mapi/weixin/login/"><i class="icon icon-wechat"></i>
+								<u>使用微信登录</u>
+							</a>
+						</div><span class="btn btn--black" id="btn-login">登录</span>
+					</div>
+				</div>
+				<div class="column">
+					<h2>注册</h2><span class="btn-tab--switch btn btn--red" id="register">开始注册</span>
+					<p class="text">
+						注册佛罗伦萨线上商城账号，获取更多个性化信息
+						<br>· 愿望清单
+						<br>· 查询订单信息
+						<br>· 管理收货地址
+					</p>
+				</div>
+			</div>
+			<div class="con j-con register" id="register-box" style="display: none">
+				<div class="box">
+					<h2>注册<span class="tips">已有账号？<a id="switchLogin" class="btn-tab--switch" href="javascript:;">
+                <u>点击登录</u></a></span></h2>
+					<div class="inp-group mobile">
+						<label class="inp-label">* 手机号码</label>
+						<input class="f-control" type="tel" name="mobile" placeholder="请输入您的手机号" maxlength="11">
+					</div>
+					<div class="inp-group">
+						<label class="inp-label">* 请输入6位短信验证码</label>
+						<input class="f-control" type="tel" name="rndcode" placeholder="" maxlength="6">
+						<a class="inp-pos--txt" id="get_captcha_02" href="javascript:;">发送验证码</a>
+					</div>
+					<div class="bottom2">
+						<p>
+							<label class="inp-checkbox" for="agree1">
+                <input id="agree1" type="checkbox" checked="checked"><span></span>
+              </label>注册即代表您同意
+							<a href="/term#privacy">
+								<u>隐私政策</u>
+							</a>
+						</p>
+						<p>
+							<label class="inp-checkbox" for="agree">
+                <input id="agree" type="checkbox" checked="checked"><span></span>
+              </label>我希望通过短信和电话收到佛罗伦萨小镇的推广信息、问卷调查和最新动态。
+						</p>
+						<div class="btns"><span class="btn btn--red" id="btn-reg">注册</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="con success hide" id="success" style="display: none">
+				<h2><span class="icon-correct2"></span><span>注册成功</span></h2>
+				<p>诚邀您加入会员俱乐部，购物可得积分，兑换超值礼品。</p>
+				<div class="bottom">
+					<a class="btn btn--black" href="javascript:;">立即加入</a>
+					<a class="btn btn--border-black" href="/">暂不加入</a>
+				</div>
+			</div>
+		</div>
+		<script>
+			var loginBox = document.getElementsByClassName("login-box");
+			var login = document.getElementById("login");
+			var registerBtn = document.getElementById("register");
+			var registerBox = document.getElementById("register-box");
+			var loginSwitch = document.getElementById("switchLogin");
+			var success = document.getElementById("success");
+			registerBtn.onclick = function() {
+				registerBox.style.display = "block";
+				login.style.display = "none";
+			}
+			console.log(loginSwitch);
+			loginSwitch.onclick = function() {
+				console.log(1);
+				registerBox.style.display = "none";
+				login.style.display = "block";
+			}
+		</script>
+	</body>
+
+</html>

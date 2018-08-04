@@ -1,0 +1,261 @@
+@charset "utf-8";
+/*css document*/
+body,div,p,ol,ul,li,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6,fieldset,img,input,figure{
+	margin:0;
+	padding:0;
+}
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body, html {
+    position: relative;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000;
+    font-size: 14px;
+}
+body, button, input, select, textarea {
+    font-family: PingFang SC,Helvetica,Microsoft Yahei,Arial,STHeiti-light;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body, html {
+    font-size: 12px;
+}
+ul,ol{
+	list-style: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: #333;
+}
+fieldset, img {
+    border: 0;
+}
+body, button, input, select, textarea {
+    font-family: PingFang SC,Helvetica,Microsoft Yahei,Arial,STHeiti-light;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+.page-header .mini-header {
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    height: 55px;
+    width: 100%;
+    padding: 10px 15px;
+    position: relative;
+    background-color: #fff;
+}
+.page-header .mini-header .menu {
+    width: 14px;
+    height: 12px;
+    display: inline-block;
+    border: 10px solid transparent;
+    box-sizing: content-box;
+    margin-left: -10px;
+    position: relative;
+}
+.page-header .mini-header .menu span {
+    width: 14px;
+    height: 2px;
+    background: #404040;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    transition: all .25s;
+}
+.page-header .mini-header .menu span:last-child {
+    top: 10px;
+}
+.page-header .mini-header .logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    height: 35px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.page-header .mini-header .logo img {
+    width: auto;
+    height: inherit;
+}
+.page-header .mini-header .extra {
+    color: #c52f47;
+}
+.page-header .mini-header .extra .icon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: 5px solid transparent;
+    box-sizing: content-box;
+}
+.page-header .mini-header .extra .icon.icon-like {
+    height: 12px;
+    vertical-align: -6px;
+    background-image: url(../img/icon-mobile-like.png);
+}
+.page-header .mini-header .extra .icon.icon-search .search-group {
+    position: fixed;
+    z-index: 6;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #f4f4f4;
+    display: none;
+}
+.page-header .mini-header .extra .icon.icon-search {
+    vertical-align: -7px;
+    background-image: url(../img/icon-mobile-search.png);
+}
+.page-header .mini-header .extra .icon.icon-search .search-group .search-control {
+    padding: 0 15px;
+    background: #fff;
+    position: relative;
+}
+.page-header .mini-header .extra .icon.icon-search .search-group .search-control input {
+    width: 100%;
+    outline: none;
+    line-height: 20px;
+    border: 0;
+    padding: 10px 18px 10px 3px;
+}
+.page-header .mini-header .extra .icon.icon-search .search-group .search-control .search-btn {
+    content: "";
+    width: 44px;
+    height: 40px;
+    vertical-align: middle;
+    background-image: url(../img/icon-mobile-search.png);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.page-header .mini-header .extra .icon.icon-cart {
+    vertical-align: -7px;
+    background-image: url(../img/icon-mobile-bag.png);
+}
+.page-header .mini-header .menu.active span:first-child, .page-header .mini-header .menu.active span:last-child {
+    top: 5px;
+    width: 0;
+    left: 50%;
+}
+.index{
+	padding-top:55px;
+}
+.index .page-home {
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    width: 320px; 
+	height: 442.4px;
+}
+.index .page-home .img-bg {
+    width: 100%;
+    height: 100%;
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    transition: all .3s cubic-bezier(.15,.79,.54,.74);
+}
+.index .page-home .inner {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    bottom: 46.5025%;
+    opacity:1;
+    font-weight: normal;
+}
+.index .page-home .arrow-down {
+    position: absolute;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon-arrow-down.png) no-repeat;
+    background-size: 30px 16px;
+    background-position: 50%;
+    bottom: 50px;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 1;
+}
+.index .page-home .inner h2 {
+    font-size: 16px;
+    letter-spacing: 0;
+    margin-bottom: 21px;
+    font-weight: 100;
+}
+.index .page-home .inner h1 {
+    font-size: 24px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+    font-weight: 100;
+}
+.index #block-3 {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+.index #block-4 {
+    position: relative;
+    font-size: 0;
+    background-color: #f3f3f3;
+}
+.index #block-4 .block4-wrapper {
+    padding: 0 12px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+.index #block-4 .swiper-container--4-mb {
+    display: block;
+    overflow: hidden;
+}
+.index #block-4 .swiper-wrapper {
+    padding: 15px 0 30px;
+}
+.index #block-4 .swiper-slide-pagination {
+	width:100%;
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity .2s ease-in-out;
+}

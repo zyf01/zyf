@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" id="top" class="no-js">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>我的账户</title>
+		<meta name="description" content="佛罗伦萨小镇" />
+		<meta name="keywords" content="佛罗伦萨小镇" />
+		<meta name="robots" content="INDEX,FOLLOW" />
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<link rel="icon" href=" img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/core.css" />
+		<link rel="stylesheet" href="css/mycount.css">
+	</head>
+
+	<body>
+		<div class="page-header" id="page-header">
+			<div class="main-nav">
+				<a href="/">
+					<div class="logo"></div>
+				</a>
+				<div class="nav">
+					<ul class="vice">
+						<li mars_sead="head_login_link">
+							<a href="https://www.fvoutlet.com/index.php/customer/account/login/?redirect_uri=/">请登录</a><span></span></li>
+						<li mars_sead="head_reg_link">
+							<a href="https://www.fvoutlet.com/index.php/customer/account/create/?type=reg">免费注册</a><span></span></li>
+						<li>
+							<a href="/outlet/sh">探索佛罗伦萨小<span></span></a>
+						</li>
+						<li mars_sead="head_ordertrack_link">
+							<a href="https://www.fvoutlet.com/index.php/sales/order/history/">追踪我的订单</a><span></span></li>
+						<li>
+							<a class="customer-service" href="/help">客服帮助</a>
+							<div class="customer-service-modal">
+								<p class="text">需要帮助？客服热线</p>
+								<a class="phone" href="tel:4006946868">4006946868</a>
+								<p class="time">周一至周日 8:00 - 21:30</p>
+							</div>
+						</li>
+					</ul>
+					<div class="main">
+						<ul class="categories">
+							<li mars_sead="nav_category-apparel_link">
+								<a href="https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7">服饰</a>
+							</li>
+							<div class="category-panel" c-tpl="category.data[7]|tpl-category-detail" data-url="https://www.fvoutlet.com/index.php/category-apparel.html"></div>
+							<li mars_sead="nav_category-bags_link">
+								<a href="https://www.fvoutlet.com/index.php/category-bags.html?from=nav_8">包袋</a>
+							</li>
+							<div class="category-panel" c-tpl="category.data[8]|tpl-category-detail" data-url="https://www.fvoutlet.com/index.php/category-bags.html"></div>
+							<li mars_sead="nav_category-shoes_link">
+								<a href="https://www.fvoutlet.com/index.php/category-shoes.html?from=nav_5">鞋履</a>
+							</li>
+							<div class="category-panel" c-tpl="category.data[5]|tpl-category-detail" data-url="https://www.fvoutlet.com/index.php/category-shoes.html"></div>
+							<li mars_sead="nav_category-accessories_link">
+								<a href="https://www.fvoutlet.com/index.php/category-accessories.html?from=nav_6">配饰</a>
+							</li>
+							<div class="category-panel" c-tpl="category.data[6]|tpl-category-detail" data-url="https://www.fvoutlet.com/index.php/category-accessories.html"></div>
+							<li mars_sead="nav_category-jewelry_link">
+								<a href="https://www.fvoutlet.com/index.php/category-jewelry.html?from=nav_41">首饰</a>
+							</li>
+							<div class="category-panel" c-tpl="category.data[41]|tpl-category-detail" data-url="https://www.fvoutlet.com/index.php/category-jewelry.html">
+							</div>
+						</ul>
+						<ul class="extra" c-show="firstAjaxComplete" style="display: block;">
+							<a mars_sead="nav_wishlist_link" title="心愿单" href="/wishlist" class="icon icon-like"></a>
+							<div mars_sead="nav_search_link" class="icon icon-search" c-click="searchToggle" title="搜索" c-class="search_css">
+								<!-- <input placeholder="搜索" c-keydown="search" c-model="search_val" c-click="stopPropagation"> -->
+								<div class="search-panel" c-click="searchPanel" c-tpl="search.detail|tpl-search-detail" c-show="search_panel_show" style="display: none;">
+
+									<div class="search-panel__header" c-click="stopPropagation">
+										<div>搜索 得到 0 个结果</div>
+									</div>
+									<div class="product-wrapper search-panel__body" c-click="stopPropagation">
+
+										<div class="search-nothing">暂无搜索结果<br>请重新输入搜索关键词</div>
+
+									</div>
+
+								</div>
+							</div>
+							<a mars_sead="nav_cart_link" title="购物袋" href="https://www.fvoutlet.com/index.php/checkout/cart/" c-tpl="carts" class="icon-cart-wrapper">
+								<div class="icon icon-cart"></div>
+
+							</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="acc-wrapper">
+			<div class="wishlist-submenu">
+				<div class="layout-center">
+					<div class="navbar-head">
+						<a class="navbar-brand" href="https://www.fvoutlet.com/index.php/customer/account/">个人中心</a>
+						<div class="navbar-toggle">个人中心</div>
+					</div>
+					<ul class="navbar-nav">
+						<li class="active">
+							<a href="javascript:;">首页</a>
+						</li>
+						<li mars_sead="user_page_tab_2">
+							<a href="/wishlist">收藏商品</a>
+						</li>
+						<li mars_sead="user_page_tab_3">
+							<a href="/customer/account/brand">关注品牌</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="acc-box">
+				<div class="layout-center">
+					<div class="acc-column">
+						<div class="acc-content">
+							<div id="acc-order-01" class="acc-center">
+								<h2>我的订单</h2>
+								<p>您暂时还没有订单，快来剁手哇</p>
+								<a class="btn btn--black" href="/">开始购物</a>
+							</div>
+							<div id="acc-order-02" class="acc-order hide">
+								<h2>我的订单</h2>
+								<ul id="order-list">
+
+								</ul>
+								<div class="bottom">
+									<a href="https://www.fvoutlet.com/index.php/sales/order/history/" class="btn btn--black" mars_sead="user_all_orders_link">查看全部订单</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="acc-column">
+						<div class="acc-content">
+							<div id="acc-addr-01" class="acc-center">
+								<h2>收货地址管理</h2>
+								<p>您可以新建或者管理您的收货信息，帮助您快速购物</p>
+								<a class="btn btn--black" id="addAddr">建立收货地址</a>
+							</div>
+							<div id="acc-addr-02" class="acc-addr hide">
+								<h2>收货地址管理</h2>
+								<div class="c">
+									<h3 id="acc-addr-name"></h3>
+									<p id="acc-addr-address"></p>
+									<p id="acc-addr-telephone"></p>
+								</div>
+								<a class="btn btn--black" id="mnAddr">管理</a>
+							</div>
+						</div>
+					</div>
+					<div class="acc-column">
+						<div class="acc-content">
+							<div class="acc-center">
+								<h3>燕飞  女士，您好</h3>
+								<p>可以在这里查看或修改个人信息</p>
+								<a class="btn btn--black" id="edit-userinfo" mars_sead="user_edit_userinfo_link">管理</a>
+							</div>
+						</div>
+					</div>
+					<div class="acc-column">
+						<div class="acc-content">
+							<div class="acc-brand hide" id="brand-like--1">
+								<h2>最近关注的品牌</h2>
+								<ul class="acc-brand--box" id="brand-like">
+
+								</ul>
+								<div class="bottom">
+									<a href="/customer/account/brand" class="btn btn--black" mars_sead="user_follow_brand_link">查看全部</a>
+								</div>
+							</div>
+
+							<div id="brand-like--2" class="acc-center">
+
+								<p>您还没有关注的品牌</p>
+								<a class="btn btn--black" href="/shop/brand">探索品牌</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="acc-column">
+						<div class="acc-content">
+							<div id="acc-cols--1" class="acc-collect hide">
+								<h2>最新收藏商品</h2>
+								<div id="acc-cols" class="acc-cols">
+
+								</div>
+								<div class="bottom">
+									<a href="/wishlist" class="btn btn--black" mars_sead="user_wishlist_link">管理</a>
+								</div>
+							</div>
+
+							<div id="acc-cols--2" class="acc-center">
+								<p><i class="icon icon-like-2"></i></p>
+								<h3>您还没有收藏的商品</h3>
+								<p>看到心怡商品，点击心心即可完成收藏</p>
+							</div>
+
+						</div>
+					</div>
+					<div class="acc-column">
+						<div class="acc-content">
+							<div id="subscribe02" class="acc-center">
+								<h3>已订阅</h3>
+								<p>我们将不定期为您发送最新的活动资讯以及优惠信息。</p>
+								<a id="subscribebtn-02" class="btn btn--black subscribebtn" href="javascript:;">管理</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="page-footer">
+			<!-- footer.html-->
+			<div class="footer-inner">
+				<div class="footer-left">
+					<div class="footer-list">
+						<div class="item">
+							<h3>客服帮助<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="tel:">4006946868</a>
+								</p>
+								<p>
+									<a href="mailto:customerservice@fvoutlet.com">customerservice@fvoutlet.com</a>
+								</p>
+								<p>周一至周日 8:00 - 21:30</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-list">
+						<div class="item">
+							<h3>在线购物<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="/help#term">退货退款</a>
+								</p>
+								<p>
+									<a href="/help#faq">常见问题</a>
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<h3>联系我们<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="/term#privacy">隐私条款</a>
+								</p>
+								<p>
+									<a href="/term#service">法律条款</a>
+								</p>
+								<p>
+									<a href="/term#disclaimer">免责声明</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="about">
+						<h3>关注我们<span></span></h3>
+						<div class="content"><em class="icon icon-wechat">1</em>
+							<a href="https://weibo.com/p/1006062130024800"><em class="icon icon-weibo">1</em></a>
+						</div>
+					</div>
+				</div>
+				<div class="intro">
+					<h3>探索佛罗伦萨小镇线下店铺<span></span></h3>
+					<div class="desc content">
+						<p>佛罗伦萨小镇是拥有超百家意大利奢侈品牌及优质时尚品牌，全年提供无可抗拒的购物折扣，为您带来前所未有的度假式购物体验</p>
+						<p>
+							<a href="/outlet/sh"><span>上海</span></a>
+							<a href="/outlet/tj"><span>天津</span></a>
+							<a href="/outlet/gz"><span>广州</span></a>
+							<a href="/outlet/hk"><span>香港</span></a>
+							<a href="/outlet/wh"><span>武汉</span></a>
+							<a href="/outlet/cd"><span>成都</span></a>
+						</p>
+					</div>
+					<p class="copyright">&copy; 2017 佛罗伦萨小镇版权所有
+						<a href="http://www.miibeian.gov.cn/">沪ICP备17033202号-1</a>
+						<div style="padding:20px 0;">
+							<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502007274" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="img/beianbgs.png" style="float:left;width: inherit;" />
+								<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011502007274号</p>
+							</a>
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-addAddr modal-form modal-wrap" id="modal-addAddr">
+			<div class="modal-inner undefined">
+				<div class="modal-close icon-close" data-func="modalClose">x</div>
+
+				<div class="vip-modal-content" data-animate="undefined">
+					<div class="vip-modal-header">新增配送信息</div>
+					<div class="vip-modal-body">
+						<div class="addAddr">
+							<div class="inp-group">
+								<div class="inp-label">收件人姓名*</div>
+								<input name="name" class="f-control" maxlength="20" type="text" placeholder="请输入你的姓名">
+								<span class="inp-ok" style="display: none;"></span><span class="inp-error" style="display: none;"></span></div>
+							<div class="inp-group">
+								<div class="inp-label">联系号码*</div>
+								<input name="mobile" class="f-control" maxlength="11" type="tel" placeholder="请输入你的联系电话">
+								<span class="inp-ok" style="display: none;"></span><span class="inp-error" style="display: none;"></span></div>
+							<div class="inp-group">
+								<div class="inp-label">收货地址*</div>
+								<div id="multiPickerInput" class="select-3">
+									<div class="select-wrapper">
+										<div class="select-box" data="undefined">
+											<div class="label active" data-func="showItem">上海市
+												<a class="caret"></a>
+											</div>
+											<div class="select-combox">
+												<ul class="select-combox-ul">
+													<li data-func="_change" data-flag="province" data-val="493" data-text="上海市">上海市</li>
+
+													<li data-func="_change" data-flag="province" data-val="512" data-text="云南省">云南省</li>
+
+													<li data-func="_change" data-flag="province" data-val="489" data-text="内蒙古自治区">内蒙古自治区</li>
+
+													<li data-func="_change" data-flag="province" data-val="485" data-text="北京市">北京市</li>
+
+													<li data-func="_change" data-flag="province" data-val="491" data-text="吉林省">吉林省</li>
+
+													<li data-func="_change" data-flag="province" data-val="510" data-text="四川省">四川省</li>
+
+													<li data-func="_change" data-flag="province" data-val="486" data-text="天津市">天津市</li>
+
+													<li data-func="_change" data-flag="province" data-val="517" data-text="宁夏回族自治区">宁夏回族自治区</li>
+
+													<li data-func="_change" data-flag="province" data-val="496" data-text="安徽省">安徽省</li>
+
+													<li data-func="_change" data-flag="province" data-val="499" data-text="山东省">山东省</li>
+
+													<li data-func="_change" data-flag="province" data-val="488" data-text="山西省">山西省</li>
+
+													<li data-func="_change" data-flag="province" data-val="503" data-text="广东省">广东省</li>
+
+													<li data-func="_change" data-flag="province" data-val="504" data-text="广西壮族自治区">广西壮族自治区</li>
+
+													<li data-func="_change" data-flag="province" data-val="518" data-text="新疆维吾尔自治区">新疆维吾尔自治区</li>
+
+													<li data-func="_change" data-flag="province" data-val="494" data-text="江苏省">江苏省</li>
+
+													<li data-func="_change" data-flag="province" data-val="498" data-text="江西省">江西省</li>
+
+													<li data-func="_change" data-flag="province" data-val="487" data-text="河北省">河北省</li>
+
+													<li data-func="_change" data-flag="province" data-val="500" data-text="河南省">河南省</li>
+
+													<li data-func="_change" data-flag="province" data-val="495" data-text="浙江省">浙江省</li>
+
+													<li data-func="_change" data-flag="province" data-val="505" data-text="海南省">海南省</li>
+
+													<li data-func="_change" data-flag="province" data-val="501" data-text="湖北省">湖北省</li>
+
+													<li data-func="_change" data-flag="province" data-val="502" data-text="湖南省">湖南省</li>
+
+													<li data-func="_change" data-flag="province" data-val="515" data-text="甘肃省">甘肃省</li>
+
+													<li data-func="_change" data-flag="province" data-val="497" data-text="福建省">福建省</li>
+
+													<li data-func="_change" data-flag="province" data-val="513" data-text="西藏自治区">西藏自治区</li>
+
+													<li data-func="_change" data-flag="province" data-val="511" data-text="贵州省">贵州省</li>
+
+													<li data-func="_change" data-flag="province" data-val="490" data-text="辽宁省">辽宁省</li>
+
+													<li data-func="_change" data-flag="province" data-val="509" data-text="重庆市">重庆市</li>
+
+													<li data-func="_change" data-flag="province" data-val="514" data-text="陕西省">陕西省</li>
+
+													<li data-func="_change" data-flag="province" data-val="516" data-text="青海省">青海省</li>
+
+													<li data-func="_change" data-flag="province" data-val="492" data-text="黑龙江省">黑龙江省</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="select-box" data="undefined">
+											<div class="label " data-func="showItem">请选择城市
+												<a class="caret"></a>
+											</div>
+											<div class="select-combox">
+												<ul class="select-combox-ul">
+													<li data-func="_change" data-flag="city" data-val="73" data-text="上海市">上海市</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="select-box" data="undefined">
+											<div class="label " data-func="showItem">请选择地区
+												<a class="caret"></a>
+											</div>
+											<div class="select-combox">
+												<ul class="select-combox-ul"></ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<input name="addr" id="addr" value="493" class="f-control hide" type="hidden">
+								<span class="inp-ok" style="display: none;"></span><span class="inp-error" style="display: none;"></span></div>
+							<div class="inp-group inp-group--bigger">
+								<div class="inp-label">详细地址*</div>
+								<textarea name="street" class="f-control" rows="3" maxlength="150" cols="20"></textarea>
+								<span class="inp-ok" style="display: none;"></span><span class="inp-error" style="display: none;"></span></div>
+						</div>
+					</div>
+				</div>
+				<div class="vip-modal-footer">
+					<div class="addr-foot">
+						<label class="inp-radio" for="setDefault"><input name="setDefault" type="checkbox" id="setDefault"><i></i>设为默认地址</label>
+						<a class="btn btn--black" href="javascript:;" data-func="sure">保存</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
