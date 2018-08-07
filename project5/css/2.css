@@ -1,0 +1,341 @@
+@charset "utf-8";
+/*css document*/
+body,div,p,ol,ul,li,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6,fieldset,img,input,figure{
+	margin:0;
+	padding:0;
+}
+ul,ol{
+	list-style: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: #333;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+fieldset, img {
+    border: 0;
+}
+
+img {
+    width: 100%;
+    line-height: 0;
+    vertical-align: middle;
+    -webkit-touch-callout: none;
+    border-style: none;
+}
+.login-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 1200px;
+    overflow-x: hidden;
+    background: #190e08;
+    font-size: 14px;
+}
+.login-box .logo {
+    z-index: 2;
+    top: 90px;
+    height: 99px;
+    width: 181px;
+    background: url(../img/logo-black.png) no-repeat 0 0;
+    background-size: 100% auto;
+}
+.login-box .img {
+    z-index: 1;
+    height: 1080px;
+    width: 1920px;
+}
+.login-box .logo {
+    position: absolute;
+    left: 50%;
+    display: block;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.login-box .con {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 290px;
+    width: 1180px;
+    height: 500px;
+    border-radius: 4px;
+    background: #fff;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.login-box .con .column {
+    width: 39%;
+    float: left;
+    padding: 60px;
+    font-size: 14px;
+}
+.login-box .con h2 {
+    padding-bottom: 50px;
+    font-size: 28px;
+}
+.login-box .con .inp-group {
+    padding-top: 10px;
+}
+.inp-group {
+    position: relative;
+}
+.login-box .con.login .bottom {
+    padding-top: 30px;
+    clear: both;
+}
+.box:after, .clearfix:after, .column:after, .container:after, .wrap:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.inp-group .inp-label {
+    display: block;
+    height: 26px;
+}
+.inp-group .f-control {
+    display: block;
+    width: 95%;
+    clear: both;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #d8d8d8;
+    outline: none;
+    vertical-align: middle;
+    line-height: 40px;
+}
+.inp-group .inp-ok {
+    position: absolute;
+    z-index: 5;
+    right: 8px;
+    bottom: 8px;
+    height: 24px;
+    width: 24px;
+    background: url(../img/icon-correct.png) no-repeat;
+    background-size: 100% auto;
+}
+.inp-group .inp-error {
+    position: absolute;
+    right: 0;
+    bottom: 44px;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    background: #d2003c;
+    color: #fff;
+    font-size: 12px;
+}
+label {
+    cursor: default;
+    
+}
+/*.hide, .visible-inline-xs, canvas {
+    display: none;
+}*/
+.inp-group .inp-pos--txt {
+    position: absolute;
+    right: 36px;
+    bottom: 14px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.inp-group .inp-pos--imgcode {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.login-box .con.login .bottom .fl {
+    margin-top: 12px;
+}
+.fl {
+    float: left;
+}
+.login-box .con.login .bottom .btn {
+    float: right;
+}
+.btn--black {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+}
+.btn {
+    display: inline-block;
+    width: 130px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 34px;
+    border: 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    background: transparent;
+    outline: none;
+}
+.btn--red {
+    color: #fff;
+    border-color: #d2003c;
+    background-color: #d2003c;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.box:after, .clearfix:after, .column:after, .container:after, .wrap:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.login-box .con.login:after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 50%;
+    width: 1px;
+    height: 400px;
+    top: 50px;
+    border-left: 1px solid #eee;
+}
+.login-box .con .text {
+    padding-top: 24px;
+    line-height: 28px;
+}
+.login-box .con.login .bottom .btn {
+    float: right;
+}
+.btn--black {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+}
+.login-box .con.login .bottom .fl .icon {
+    margin-right: 6px;
+}
+.icon-wechat {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    background-image: url(../img/icon-wechat.png);
+}
+.icon {
+    display: inline-block;
+    vertical-align: -1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.login-box .register .box {
+    width: 470px;
+    margin: 0 auto;
+}
+.login-box .register .box h2 {
+    vertical-align: middle;
+}
+.login-box .con h2 {
+    padding-bottom: 50px;
+    font-size: 28px;
+}
+.login-box .register .box h2 .tips {
+    float: right;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #404040;
+    font-weight: 400;
+}
+.login-box .register .box h2 .tips a {
+    color: #d4003b;
+}
+.login-box .register {
+    padding-top: 60px;
+    height: 560px;
+}
+.login-box .con {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 290px;
+    width: 1180px;
+    height: 500px;
+    border-radius: 4px;
+    background: #fff;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.login-box .register .box .bottom2 {
+    clear: both;
+    padding-top: 20px;
+    font-size: 12px;
+}
+.login-box .register .box .inp-checkbox {
+    display: inline-block;
+    width: 24px;
+}
+.login-box .register .box .inp-checkbox input[type=checkbox]:checked+span {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA4CAYAAABqtn+aAAAAAklEQ…DySYFlWe1a69Uk4cb1UAKzBsgnNe1uXKtJTZzUxEmz/wUu5abN+vfdfgAAAABJRU5ErkJggg==);
+    background-position: -22px -42px;
+    width: 14px;
+    height: 14px;
+}
+.login-box .register .box .bottom2 p a, .login-box .register .box .bottom2 p u {
+    color: #333;
+}
+.login-box .register .box .bottom2 .btns {
+    clear: both;
+    text-align: center;
+    padding-top: 30px;
+}
+.login-box .success {
+    padding-top: 165px;
+    text-align: center;
+}
+.login-box .success h2 {
+    padding-bottom: 50px;
+    font-size: 28px;
+    color: #000;
+    vertical-align: middle;
+}
+.login-box .success h2 .icon-correct2 {
+    margin-right: 10px;
+}
+.icon-correct2 {
+    background-position: 0 0;
+    width: 48px;
+    height: 34px;
+    vertical-align: middle;
+}
+.login-box .success h2 {
+    padding-bottom: 50px;
+    font-size: 28px;
+    color: #000;
+    vertical-align: middle;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.btn--border-black {
+    color: #000;
+    border-color: #000;
+    background-color: transparent;
+}
+.inp-group .inp-error {
+    position: absolute;
+    right: 0;
+    bottom: 44px;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    background: #d2003c;
+    color: #fff;
+    font-size: 12px;
+}

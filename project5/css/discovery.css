@@ -1,0 +1,249 @@
+.std{
+	padding-top: 110px;
+}
+.realtown .section.banners {
+    position: relative;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+.realtown .section.banners .img {
+    width: auto;
+    max-width: 100%;
+}
+.realtown .section.intro {
+    color: #404040;
+    padding: 50px 0 59px;
+    box-shadow: 0 0 8px 2px rgba(0,0,0,.06);
+    border-radius: 5px 5px 0 0/5px 5px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.layout-center {
+    max-width: 936px;
+}
+.realtown .section.news {
+    padding: 100px 0;
+}
+.realtown .section.map {
+    width: 100%;
+    overflow: hidden;
+}
+.realtown .section.online {
+    background: url(../img/bg-online-intro.png) no-repeat top;
+    background-size: cover;
+    text-align: center;
+}
+.realtown .section.intro .part.left {
+    box-sizing: border-box;
+    float: left;
+    width: 61.96581%;
+    color: #666;
+    letter-spacing: 1px;
+    border-right: 1px solid #f4f4f4;
+}
+.realtown .section.intro .part {
+    padding: 0 24.7px 0 49px;
+}
+.realtown .section.intro .part.right {
+    float: right;
+    width: 30.03419%;
+}
+.box:after, .clearfix:after, .column:after, .container:after, .wrap:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.realtown .section.intro .part.left .logo {
+    float: left;
+    display: block;
+    width: 60px;
+    margin-right: 20px;
+}
+.realtown .section.intro .part.left .section-title {
+    float: left;
+    font-weight: 700;
+    padding-left: 20px;
+    border-left: 1px solid #d8d8d8;
+}
+.realtown .section-title {
+    font-size: 24px;
+    line-height: 33px;
+    height: 33px;
+    color: #404040;
+}
+.realtown .section.intro .part.left p {
+    margin-bottom: 25px;
+}
+.realtown .section.intro .part.right .heading {
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.realtown .section.intro .part.right .times {
+    margin-top: 35px;
+}
+.realtown .section.intro .part.right .heading .ico.hotspot {
+    background-image: url(../img/hotspot.png);
+}
+.realtown .section.intro .part.right .heading .ico {
+    background: url(../img/buildings.png) no-repeat 0;
+    background-size: 70%;
+    float: left;
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+.realtown .section.intro .part.right .heading {
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.realtown .section.intro .part.right .citys .trigger {
+    position: relative;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #d2003c;
+    cursor: pointer;
+}
+.realtown .section.intro .part.right .citys .trigger .switchCity {
+    position: absolute;
+    top: -100000px;
+    left: 50%;
+    padding: 20px 10px;
+    width: 272px;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0 5px 10px #ddd;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.realtown .section.intro .part.right .citys .trigger .switchCity .city.active {
+    color: #d2003c;
+    cursor: default;
+}
+.realtown .section.intro .part.right .citys .trigger .switchCity .city {
+    margin-right: 12px;
+    display: inline-block;
+}
+.realtown .section.intro .part.right .times p {
+    margin-left: 23px;
+}
+.realtown .section.news .section-title {
+    position: relative;
+}
+.realtown .section-title {
+    font-size: 24px;
+    line-height: 33px;
+    height: 33px;
+    color: #404040;
+}
+.realtown .section.news .news-list {
+    padding-top: 20px;
+}
+.realtown .section.news .news-list-wrapper {
+    margin: 0 -15px;
+}
+.realtown .section.news .news-item {
+    position: relative;
+    display: block;
+    padding: 0 15px;
+    float: left;
+    width: 33.33333%;
+}
+.realtown .section.news .news-item-inner {
+    position: relative;
+}
+.realtown .section.news .news-item .name {
+    display: block;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 58.92%;
+    font-size: 18px;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.realtown .section.news .news-item .time {
+    display: block;
+    margin-top: 10px;
+}
+.realtown .section.map .section-title {
+    display: none;
+}
+.realtown .section-title {
+    font-size: 24px;
+    line-height: 33px;
+    height: 33px;
+    color: #404040;
+}
+realtown .section.map .inner {
+    position: relative;
+    display: block;
+    left: 50%;
+}
+.realtown .section.map .img.pc {
+    display: block;
+    position: relative;
+}
+.realtown .section.map .img {
+    display: none;
+}
+.realtown .section.online {
+    background-size: cover;
+    text-align: center;
+}
+.realtown .section.online .inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 70px 0;
+    color: #fff;
+}
+.realtown .section.online .heading {
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+    font-size: 24px;
+}
+.realtown .section.online .intro {
+    text-indent: 2em;
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+.realtown .section.online .visit {
+    width: auto;
+    color: #fff;
+    display: inline-block;
+    border-radius: 2px;
+    margin: 30px auto 0;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #fff;
+    padding: 0 30px;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.btn {
+    display: inline-block;
+    width: 130px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 34px;
+    border: 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    background: transparent;
+    outline: none;
+}
+

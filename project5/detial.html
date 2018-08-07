@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>商品详情</title>
+		<meta name="description" content="肩宽46胸围96腰围96下摆围96衣长84袖长25" />
+		<meta name="keywords" content="红色女连衣裙" />
+		<meta name="robots" content="INDEX,FOLLOW" />
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<link rel="dns-prefetch" href="//i18n.vipstatic.com" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<link rel="icon" href=" img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/core.css" />
+		<link rel="stylesheet" href="css/3.css">
+		<link rel="stylesheet" href="css/detail.css" />
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+<div class="page-header" id="page-header">
+			<div class="main-nav">
+				<a href="/">
+					<div class="logo logoa"></div>
+				</a>
+				<div class="nav">
+					<ul class="vice">
+						<li>
+							<a href="https://www.fvoutlet.com/index.php/customer/account/login/?redirect_uri=/">请登录</a><span></span></li>
+						<li>
+							<a href="https://www.fvoutlet.com/index.php/customer/account/create/?type=reg">免费注册</a><span></span></li>
+						<li>
+							<a href="/outlet/sh">探索佛罗伦萨小<span></span></a>
+						</li>
+						<li>
+							<a href="https://www.fvoutlet.com/index.php/sales/order/history/">追踪我的订单</a><span></span></li>
+						<li>
+							<a class="customer-service" href="/help">客服帮助</a>
+							<div class="customer-service-modal">
+								<p class="text">需要帮助？客服热线</p>
+								<a class="phone" href="tel:4006946868">4006946868</a>
+								<p class="time">周一至周日 8:00 - 21:30</p>
+							</div>
+						</li>
+					</ul>
+					<div class="main">
+						<ul class="categories">
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-apparel.html?from=nav_7">服饰</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-bags.html?from=nav_8">包袋</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-shoes.html?from=nav_5">鞋履</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-accessories.html?from=nav_6">配饰</a>
+							</li>
+							<li>
+								<a href="https://www.fvoutlet.com/index.php/category-jewelry.html?from=nav_41">首饰</a>
+							</li>
+						</ul>
+						<div class="category-panel">
+							<div class="category-panel__wrapper">
+							    <div class="category-panel__item">
+							      <p class="category-panel__title">上装</p> 
+							    </div>
+							    <div class="category-panel__item">
+							      <p class="category-panel__title">下装</p>
+							     </div>
+							    <div class="category-panel__item">
+							      <p class="category-panel__title">连衣裙</p>				
+							    </div>
+							    <div class="category-panel__item">
+							      <p class="category-panel__title">内衣</p>
+							      <p class="category-panel__child">文胸</p>
+							      <p class="category-panel__child">底裤</p>
+							      <p class="category-panel__child">睡衣</p>
+							      <p class="category-panel__child">泳衣</p>    
+							    </div>
+							</div>
+						</div>
+						<!-- <ul class="extra" style="display: none;">
+				          <a title="心愿单" href="/wishlist" class="icon icon-like"></a>
+				          <div class="icon icon-search active" title="搜索">
+				          </div>
+				          <a title="购物袋" href="https://www.fvoutlet.com/index.php/checkout/cart/" class="icon-cart-wrapper">
+				            <div class="icon icon-cart"></div>
+				          </a>
+				        </ul> -->
+						<ul class="extra">
+							<a  title="心愿单" href="/wishlist" class="icon icon-like"></a>
+							<div class="icon icon-search active"  title="搜索">
+							</div>
+							<input id = "searchinp" placeholder="搜索" style="width: 0;">
+							<a title="购物袋" href="https://www.fvoutlet.com/index.php/checkout/cart/" class="icon-cart-wrapper">
+								<div class="icon icon-cart"></div>
+							</a>
+						</ul>
+						<script type="text/javascript">
+							$(function(){
+								$(".icon-search").click(function(){
+									let widthl = parseInt($("#searchinp")[0].style.width);
+									if(widthl == 124){
+										$("#searchinp").css("width","0px");	
+									}else if(widthl == 0){
+										$("#searchinp").css("width","124px");	
+									}
+								});
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <script type="text/javascript">
+			$(function(){
+				$(".categories li").mouseover(
+					function () {
+					    $(".category-panel").css({"display":"block"});
+   				 	 	$(".categories li").mouseout(function(){$(".category-panel").css("display","none");});
+   				 		}
+   					)
+				});
+		</script> -->
+		<script type="text/javascript">
+			$(function(){
+				$(".categories li").mouseover(
+					function () {
+					    $(".category-panel").css({
+					    	"top":"110px",
+					    	"opacity":"1"
+						});
+   				 		}
+   					);
+				$(".category-panel").mouseover(
+					function () {
+					    $(".category-panel").css({
+					    	"top":"110px",
+					    	"opacity":"1"
+						});
+   				 		}
+   					);
+				$(".category-panel").mouseout(
+					function () {
+					    $(".category-panel").css({
+					    	"top":"-1000px",
+					    	"opacity":"0"
+						});
+   				 		}
+   					);
+				$(".categories li").mouseout(
+					function () {
+					    $(".category-panel").css({
+					    	"top":"-1000px",
+					    	"opacity":"0"
+						});
+   				 		}
+   					)
+				});
+		</script>
+		<script type="text/javascript">
+			var logoa = document.getElementsByClassName("logoa");
+			var vice = document.getElementsByClassName("vice");
+			var main = document.getElementsByClassName("main-nav");
+			var categoryPanel =  document.getElementsByClassName("category-panel");
+			window.onscroll = function(){
+				var _scroll = document.body.scrollTop || document.documentElement.scrollTop;
+				if(_scroll >= 1000){
+					logoa[0].style.backgroundImage='url(img/logo-small.png)';
+					logoa[0].style.width = "120px" ;
+					logoa[0].style.height = "66px" ;
+					vice[0].style.display = "none";
+					main[0].style.paddingTop = "5px";
+					main[0].style.paddingBottom = "5px";
+					categoryPanel[0].style.top = "-1000px";
+					$(function(){
+						$(".categories li").mouseover(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"77px",
+							    	"opacity":"1"
+								});
+		   				 		}
+		   					);
+						$(".category-panel").mouseover(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"77px",
+							    	"opacity":"1"
+								});
+		   				 		}
+		   					);
+						$(".category-panel").mouseout(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"-1000px",
+							    	"opacity":"0"
+								});
+		   				 		}
+		   					);
+						$(".categories li").mouseout(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"-1000px",
+							    	"opacity":"0"
+								});
+		   				 		}
+		   					)
+						});
+				} else {
+					logoa[0].style.backgroundImage='url(img/logo.png)';
+					logoa[0].style.width = "150px" ;
+					logoa[0].style.height = "82px" ;
+					vice[0].style.display = "block";
+					main[0].style.paddingTop = "14px";
+					main[0].style.paddingBottom = "14px";
+					categoryPanel[0].style.top = "-1000px";
+					$(function(){
+						$(".categories li").mouseover(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"110px",
+							    	"opacity":"1"
+								});
+		   				 		}
+		   					);
+						$(".category-panel").mouseover(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"110px",
+							    	"opacity":"1"
+								});
+		   				 		}
+		   					);
+						$(".category-panel").mouseout(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"-1000px",
+							    	"opacity":"0"
+								});
+		   				 		}
+		   					);
+						$(".categories li").mouseout(
+							function () {
+							    $(".category-panel").css({
+							    	"top":"-1000px",
+							    	"opacity":"0"
+								});
+		   				 		}
+		   					)
+						});
+				}
+			}
+		</script>
+ 		<div class="detail">
+			<div class="product" style="min-height: 450px;">
+				<div class="swiper-container swiper-container-product " id="carousel">
+					<ul class="swiper-list inner swiper-container swiper-container-product-inner swiper-container-vertical " style="height: 390px left: 254px; width: 58px; display: block; " class="swiper-wrapper " id="small-btn">
+						<img class="swiper-slide " style="height: 71px; margin-bottom: 31px; " src="img/moschino_J0491540616A1555_001.JPG ">
+						<img class="swiper-slide " style="height: 71px; margin-bottom: 31px; " src="img/moschino_J0491540616A1555_002.JPG ">
+						<img class="swiper-slide " style="height: 71px; margin-bottom: 31px; " src="img/moschino_J0491540616A1555_003.JPG ">
+						<img class="swiper-slide " style="height: 71px; margin-bottom: 31px; " src="img/moschino_J0491540616A1555_004.JPG ">
+					</ul>
+					<ul class="swiper-wrapper " id="list">
+						<img class="swiper-slide " style="width: 337px; opacity: .5; " src="img/moschino_J0491540616A1555_004.JPG" alt=" ">
+						<img class="swiper-slide " style="width: 337px; opacity: 1; " src="img/moschino_J0491540616A1555_001.JPG" alt=" ">
+						<img class="swiper-slide " style="width: 337px; opacity: .5; " src="img/moschino_J0491540616A1555_002.JPG" alt=" ">
+						<img class="swiper-slide " style="width: 337px; opacity: .5; " src="img/moschino_J0491540616A1555_003.JPG" alt=" ">
+						<img class="swiper-slide " style="width: 337px; opacity: .5; " src="img/moschino_J0491540616A1555_004.JPG" alt=" ">
+						<img class="swiper-slide " style="width: 337px; opacity: .5; " src="img/moschino_J0491540616A1555_001.JPG" alt=" ">
+						<img class="swiper-slide " style="width: 337px; opacity: .5; " src="img/moschino_J0491540616A1555_002.JPG" alt=" ">
+					</ul>
+					<div class="swiper-button-prev swiper-product-prev " style="left: 337px; display: block; " id="left-btn"></div>
+					<div class="swiper-button-prev swiper-product-next " style="left: 626.5px; display: block; " id="right-btn"></div>
+				</div>
+				<script src="js/common2.js"></script>
+				<script>
+					var
+						carousel = document.getElementById('carousel'),
+						list = document.getElementById('list'),
+						listLi = list.children,
+						leftBtn = document.getElementById('left-btn'),
+						rightBtn = document.getElementById('right-btn'),
+						smallBtn = document.getElementById('small-btn'),
+						smallBtnA = Array.from(smallBtn.children),
+						index = 0, // 图片
+						dotIndex = 0, // 小按钮
+						timer = null;
+					const LI_WIDTH = 337;
+					// 复制第一张放到最后的位置
+					// 改变宽度
+					list.style.width = listLi.length * LI_WIDTH + 'px';
+					carousel.onmouseover = function() {
+						clearInterval(timer);
+					};
+					carousel.onmouseout = function() {
+						autoMove();
+					};
+					// 左侧按钮
+					leftBtn.onclick = function() {
+						// 针对轮播图
+						index--;
+						if(index < 0) {
+							index = listLi.length - 3;
+							list.style.left = -(listLi.length - 5) * LI_WIDTH + 'px';
+						}
+						bufferMove(list, {
+							left: -index * LI_WIDTH
+						});
+						// 针对小按钮
+						dotIndex--;
+						if(dotIndex < 0) {
+							dotIndex = smallBtnA.length - 1;
+						}
+						for(let i = 1; i <= listLi.length - 2; i++) {
+							listLi[i].style.opacity = .5;
+						};
+						listLi[index + 1].style.opacity = 1;
+						console.log(index);
+					};
+					// 右侧按钮
+					rightBtn.onclick = function() {
+						rightMove();
+					};
+					// 给小按钮添加鼠标进入事件
+					smallBtnA.forEach((v, k) => {
+						v.onmouseover = function() {
+							index = k;
+							bufferMove(list, {
+								left: -index * LI_WIDTH
+							});
+							dotIndex = k;
+							for(let i = 1; i <= listLi.length - 2; i++) {
+								listLi[i].style.opacity = .5;
+							};
+							listLi[index + 1].style.opacity = 1;
+						};
+					});
+					autoMove();
+
+					function autoMove() {
+						timer = setInterval(function() {
+							rightMove();
+						}, 3000);
+					}
+
+					function rightMove() {
+						// 针对轮播图
+						index++;
+						if(index >= listLi.length - 2) {
+							index = 1;
+							list.style.left = 0;
+						}
+						bufferMove(list, {
+							left: -(index - 1) * LI_WIDTH
+						});
+						for(let i = 1; i <= listLi.length - 2; i++) {
+							listLi[i].style.opacity = .5;
+						};
+						listLi[index].style.opacity = 1;
+
+						// 针对小按钮
+						dotIndex++;
+						if(dotIndex >= smallBtnA.length) {
+							dotIndex = 0;
+						}
+					}
+				</script>
+				<div class="product-desc">
+					<div class="inner">
+						<h2>黑色女式手袋</h2>
+						<h3>MOSCHINO</h3>
+						<p class="price">
+							￥&nbsp;4197 <span><s>￥&nbsp;13990</s>(3折)</span>
+						</p>
+						<p class="color">颜色<span>黑色</span></p>
+						<div class="size">
+							<p class="title">尺寸
+							</p>
+							<div class="list">
+								<div class="item" >
+									均码 </div>
+							</div>
+						</div>
+						<div class="num" tabindex="-1">数量<span class="num__content">1</span>
+							<i class="icon icon-arrow-down"></i>
+							<div class="num__list">
+								<p class="num__item num__item--select">1</p>
+								<p class="num__item">2</p>
+								<p class="num__item">3</p>
+								<p class="num__item">4</p>
+								<p class="num__item">5</p>
+								<p class="num__item">6</p>
+								<p class="num__item">7</p>
+								<p class="num__item">8</p>
+								<p class="num__item">9</p>
+								<p class="num__item">10</p>
+							</div>
+						</div>
+						<div class="btns">
+							<div class="btn-wrapper">
+								<div class="btn-contain" style = "width:200%;">
+									<a class="btn-add">加入购物车</a>
+									<a class="btn-buy" href="/checkout/cart">现在结算</a>
+								</div>
+							</div>
+							<a class="btn-keep"><i class="icon icon-love"></i><span class="btn-keep__span btn-keep__span--collect">收藏商品</span><span class="btn-keep__span btn-keep__span--cancel">已收藏</span></a>
+						</div>
+						<div class="tips">
+							<span class="tip-left">客服热线：4006946868</span>
+							<span class="tip-right">周一至周日 8:00 - 21:30</span>
+						</div>
+						<div class="shrink">
+							<div class="title">商品信息
+								<a class="handle"></a>
+							</div>
+							<div class="content">
+								                       <h3>会员购买将获得13125积分<i class="icon icon-details"></i></h3>
+								<div class="desc">
+									<p>品牌名称:MOSCHINO</p>
+									<p>简述:女士手提包</p>
+									<p>性别:女士</p>
+									<p>国家:意大利</p>
+									<p>材质:牛皮头层革</p>
+									<p>宽度:29.5</p>
+									<p>长度:22.5</p>
+									<p>高度:7.5</p>
+									<p>测量单位:CM</p>
+									<p>商品编号：A7524800117P555500U</p>
+								</div>
+								<h3><i class="icon icon-ensure"></i>小镇承诺:正品保证</h3>
+							</div>
+						</div>
+						<div class="shrink">
+							<div class="title">配送及退货
+								<a class="handle"></a>
+							</div>
+							<div class="content">
+								<h3>退货政策</h3>
+								<p>佛罗伦萨线上商城支持7天无理由退货。<br>
+									<a href="/help#term">了解更多退货政策&gt;</a>
+								</p>
+								<h3>配送说明</h3>
+								<p>佛罗伦萨线上商城将指定优质快递服务为您派送订单。<br>若你是注册会员,点击页面左上角"追踪订单 "输入注册会员账号和密码登录后，根据订单编号和订单状态查询你的订单</p>
+							</div>
+						</div>
+						<div class="shrink">
+							<div class="title">分享
+								<a class="handle"></a>
+							</div>
+							<div class="content">
+								<i class="icon icon-wechat"></i>
+								<a href="img/moschino_A7524800117P5555_004.JPG "><i class="icon icon-weibo"></i></a>
+							</div>
+						</div>
+						<p class="text">商品均由佛罗伦萨小镇中各品牌门店发货</p>
+					</div>
+				</div>
+			</div>
+			<div class="layout-center" id="block-5">
+				<div class="topic-wrapper ">
+					<div class="topic topic--m "><img class="topic__img img " src="img/moschino_J0491540616A1555_001.JPG"></div>
+					<div class="topic topic--m "><img class="topic__img img " src="img/moschino_J0491540616A1555_002.JPG"></div>
+					<div class="topic topic--m "><img class="topic__img img " src="img/moschino_J0491540616A1555_003.JPG"></div>
+					<div class="topic topic--m "><img class="topic__img img " src="img/moschino_J0491540616A1555_004.JPG"></div>
+					<div class="topic topic--m "><img class="topic__img img " src="img/moschino_J0491540616A1555_005.JPG"></div>
+				</div>
+			</div>
+			<div class="gallery-wrapper layout-center">
+				<div class="gallery">
+					<div class="gallery__title">
+						<p class="gallery__text">猜你喜欢</p>
+					</div>
+					<div class="gallery__item">
+						<div class="goods goods--">
+							<a href="https://www.fvoutlet.com/index.php/category-apparel/detail-moschino-v0492550117a3495.html" target="_blank">
+								<img class="goods__img " src="img/moschino_A0336052417P0063_001.jpg"/>
+								<img class="goods__img--detail" src="img/moschino_A0336052417P0063_002.jpg" />
+							</a>
+							<p class="goods__text goods__brand">MOSCHINO</p>
+							<p class="goods__text goods__name">灰色女针织连衣裙</p>
+							<div class="goods__sizes">
+								<a href="https://www.fvoutlet.com/index.php/category-apparel/detail-moschino-v0492550117a3495.html?size=220" target="_blank">
+									<span class="goods__size">XXS</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/category-apparel/detail-moschino-v0492550117a3495.html?size=203" target="_blank">
+									<span class="goods__size">XS</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/category-apparel/detail-moschino-v0492550117a3495.html?size=176" target="_blank">
+									<span class="goods__size">S</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/category-apparel/detail-moschino-v0492550117a3495.html?size=" target=" _blank">
+									<span class="goods__size">更多</span>
+								</a>
+							</div>
+							<p class="goods__text goods__price goods__price--special">
+								￥ 3703 <span class="oldprice">￥ 5290</span>
+								<span class="discount">7折</span>
+							</p>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="goods goods--new">
+							<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8697/s/detail-moschino-a0324111517p1002/category/7/" target="_blank">
+								<img class="goods__img" src="img/moschino_A0336052417P0063_001.jpg"/>
+								<img class="goods__img--detail" src="img/moschino_A0336052417P0063_002.jpg"/>
+							</a>
+							<p class="goods__text goods__brand">MOSCHINO</p>
+							<p class="goods__text goods__name">彩色女式短裤</p>
+							<div class="goods__sizes">
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8697/s/detail-moschino-a0324111517p1002/category/7/?size=174 " target="_blank">
+									<span class="goods__size">38</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8697/s/detail-moschino-a0324111517p1002/category/7/?size=78 " target="_blank">
+									<span class="goods__size">40</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8697/s/detail-moschino-a0324111517p1002/category/7/?size=79 " target="_blank ">
+									<span class="goods__size">42</span>
+								</a>
+							</div>
+							<p class="goods__text goods__price goods__price--special">
+								￥ 1017 <span class="oldprice">￥ 3390</span>
+								<span class="discount">3折</span>
+							</p>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="goods goods--new">
+							<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8696/s/detail-moschino-a0228085417p1002/category/7/ " target="_blank">
+								<img class="goods__img " src="img/moschino_A0336052417P0063_001.jpg" />
+								<img class="goods__img--detail" src="img/moschino_A0336052417P0063_002.jpg" />
+							</a>
+							<p class="goods__text goods__brand">MOSCHINO</p>
+							<p class="goods__text goods__name">白色女式上衣</p>
+							<div class="goods__sizes">
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8696/s/detail-moschino-a0228085417p1002/category/7/?size=174 " target="_blank">
+									<span class="goods__size">38</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8696/s/detail-moschino-a0228085417p1002/category/7/?size=78" target="_blank">
+									<span class="goods__size">40</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8696/s/detail-moschino-a0228085417p1002/category/7/?size=79" target="_blank ">
+									<span class="goods__size">42</span>
+								</a>
+							</div>
+							<p class="goods__text goods__price goods__price--special">
+								￥ 1017 <span class="oldprice">￥ 3390</span>
+								<span class="discount">3折</span>
+							</p>
+						</div>
+					</div>
+					<div class="gallery__item" mars_exposure="productlist_product_moschino_J0681110017P0555 ">
+						<div class="goods goods--new">
+							<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8709/s/detail-moschino-j0681110017p0555/category/7/" target="_blank ">
+								<img class="goods__img" src="img/moschino_A0336052417P0063_001.jpg" />
+								<img class="goods__img--detail" src="img/moschino_A0336052417P0063_002.jpg"/>
+							</a>
+							<p class="goods__text goods__brand">MOSCHINO</p>
+							<p class="goods__text goods__name">黑色女针织外套</p>
+							<div class="goods__sizes">
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8709/s/detail-moschino-j0681110017p0555/category/7/?size=172 " target="_blank">
+									<span class="goods__size">36</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8709/s/detail-moschino-j0681110017p0555/category/7/?size=174 " target="_blank">
+									<span class="goods__size">38</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8709/s/detail-moschino-j0681110017p0555/category/7/?size=78 " target="_blank">
+									<span class="goods__size">40</span>
+								</a>
+								<a href="https://www.fvoutlet.com/index.php/catalog/product/view/id/8709/s/detail-moschino-j0681110017p0555/category/7/?size=" target="_blank">
+									<span class="goods__size">更多</span>
+								</a>
+							</div>
+							<p class="goods__text goods__price goods__price--special">
+								￥ 2097 <span class="oldprice">￥ 6990</span>
+								<span class="discount">3折</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="block-6" style="background-image: url(img/Versace_brand_page_banner_1.jpg) "><div class="shop">
+					<div class="shop__logo"><img src="img/Ferragamo_logo_6.jpg"></div>
+					<p class="shop__text"></p>
+					<a  class="btn btn--border-white" href="/shop/brand/home/code/moschino/">探索品牌</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-footer">
+			 
+			<div class="footer-inner">
+				<div class="footer-left">
+					<div class="footer-list">
+						<div class="item">
+							<h3>客服帮助<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="tel:">4006946868</a>
+								</p>
+								<p>
+									<a href="mailto:customerservice@fvoutlet.com">customerservice@fvoutlet.com</a>
+								</p>
+								<p>周一至周日 8:00 - 21:30</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-list">
+						<div class="item">
+							<h3>在线购物<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="/help#term">退货退款</a>
+								</p>
+								<p>
+									<a href="/help#faq">常见问题</a>
+								</p>
+							</div>
+						</div>
+						<div class="item">
+							<h3>联系我们<span></span></h3>
+							<div class="content">
+								<p>
+									<a href="/term#privacy">隐私条款</a>
+								</p>
+								<p>
+									<a href="/term#service">法律条款</a>
+								</p>
+								<p>
+									<a href="/term#disclaimer">免责声明</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="about">
+						<h3>关注我们<span></span></h3>
+						<div class="content "><em class="icon icon-wechat">1</em>
+							<a href="https://weibo.com/p/1006062130024800"><em class="icon icon-weibo">1</em></a>
+						</div>
+					</div>
+				</div>
+				<div class="intro">
+					<h3>探索佛罗伦萨小镇线下店铺<span></span></h3>
+					<div class="desc content ">
+						<p>佛罗伦萨小镇是拥有超百家意大利奢侈品牌及优质时尚品牌，全年提供无可抗拒的购物折扣，为您带来前所未有的度假式购物体验</p>
+						<p>
+							<a href="/outlet/sh"><span>上海</span></a>
+							<a href="/outlet/tj"><span>天津</span></a>
+							<a href="/outlet/gz"><span>广州</span></a>
+							<a href="/outlet/hk"><span>香港</span></a>
+							<a href="/outlet/wh"><span>武汉</span></a>
+							<a href="/outlet/cd"><span>成都</span></a>
+						</p>
+					</div>
+					<p class="copyright ">&copy; 2017 佛罗伦萨小镇版权所有
+						<a href="http://www.miibeian.gov.cn/ ">沪ICP备17033202号-1</a>
+						<div style="padding:20px 0; ">
+							<a target="_blank " href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502007274 " style="display:inline-block;text-decoration:none;height:20px;line-height:20px; "><img src="img/beianbgs.png " style="float:left;width: inherit; " />
+								<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393; ">沪公网安备 31011502007274号</p>
+							</a>
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script>
+	var add = document.getElementsByClassName('btn-add');
+	add[0].onclick = function () {
+		add[0].parentNode.style.width = "100%";
+	}
+</script>
+<script>
+	$(function(){
+		$(".item").click(function() {
+		  $(this).css({ color: "#fff", background: "#c92f49" });
+		});
+	})
+</script>
+<script type="text/javascript">
+	
+</script>

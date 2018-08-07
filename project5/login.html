@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" id="top" class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>客户登录</title>
+		<meta name="description" content="佛罗伦萨小镇" />
+		<meta name="keywords" content="佛罗伦萨小镇" />
+		<meta name="robots" content="INDEX,FOLLOW" />
+		<meta http-equiv="x-dns-prefetch-control" content="on" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<link rel="icon" href=" img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/2.css" />
+	</head>
+
+	<body class=" customer-account-login">
+		<!-- page content -->
+		<div class="login-box"><img class="img" src="img/bg.jpg">
+			<a class="logo" href="/"></a>
+			<div class="con j-con login" id="login" style="display: block">
+				<div class="column">
+					<h2>登录</h2>
+					<div class="inp-group mobile">
+						<label class="inp-label" for="">* 手机号码</label>
+						<input class="f-control" id ="call" type="tel" name="mobile" placeholder="请输入您的手机号" maxlength="11">
+						<span class="inp-ok" id ="callright" style="display: none;"></span>
+						<span class="inp-error" id ="callwrong" style="display: none;">请输入正确的手机号码</span>
+					</div>
+					<div class="inp-group">
+						<label class="inp-label" id = "wrongreg" for="">* 请输入6位短信验证码</label>
+						<input class="f-control" type="tel" name="rndcode" placeholder="" maxlength="6" id ="reg">
+						<a class="inp-pos--txt" id="get_captcha_01" href="javascript:;">发送验证码</a>
+					</div>
+					<div class="bottom">
+						<div class="fl">
+							<a href="/"><i class="icon icon-wechat"></i>
+								<u>使用微信登录</u>
+							</a>
+						</div><span class="btn btn--black" id="btn-login">登录</span>
+					</div>
+				</div>
+				<div class="column">
+					<h2>注册</h2><span class="btn-tab--switch btn btn--red" id="register">开始注册</span>
+					<p class="text">
+						注册佛罗伦萨线上商城账号，获取更多个性化信息
+						<br>· 愿望清单
+						<br>· 查询订单信息
+						<br>· 管理收货地址
+					</p>
+				</div>
+			</div>
+			<div class="con j-con register" id="register-box" style="display: none">
+				<div class="box">
+					<h2>注册<span class="tips">已有账号？<a id="switchLogin" class="btn-tab--switch" href="javascript:;">
+                <u>点击登录</u></a></span></h2>
+					<div class="inp-group mobile">
+						<label class="inp-label">* 手机号码</label>
+						<input class="f-control" type="tel" name="mobile" id="call1" placeholder="请输入您的手机号" maxlength="11">
+						<span class="inp-ok" id = "callright1" style="display: none;"></span>
+						<span class="inp-error" id = "callwrong1" style="display: none;">请输入正确的手机号码</span>
+					</div>
+					<div class="inp-group">
+						<label class="inp-label" id = "wrongreg1" >* 请输入6位短信验证码</label>
+						<input class="f-control" type="tel" name="rndcode" placeholder=""  id = "reg1" maxlength="6">
+						<a class="inp-pos--txt" id="get_captcha_02" href="javascript:;">发送验证码</a>
+					</div>
+					<div class="bottom2">
+						<p>
+							<label class="inp-checkbox" for="agree1">
+                <input id="agree1" type="checkbox" checked="checked"><span></span>
+              </label>注册即代表您同意
+							<a href="/term#privacy">
+								<u>隐私政策</u>
+							</a>
+						</p>
+						<p>
+							<label class="inp-checkbox" for="agree">
+                <input id="agree" type="checkbox" checked="checked"><span></span>
+              </label>我希望通过短信和电话收到佛罗伦萨小镇的推广信息、问卷调查和最新动态。
+						</p>
+						<div class="btns"><span class="btn btn--red" id="btn-reg">注册</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="con success hide" id="success" style="display: none">
+				<h2><span class="icon-correct2"></span><span>注册成功</span></h2>
+				<p>诚邀您加入会员俱乐部，购物可得积分，兑换超值礼品。</p>
+				<div class="bottom">
+					<a class="btn btn--black" href="javascript:;">立即加入</a>
+					<a class="btn btn--border-black" href="#">暂不加入</a>
+				</div>
+			</div>
+		</div>
+		<script>
+				var Mobile = document.getElementsByClassName('f-control');
+				var error = document.getElementsByClassName('inp-error');
+				var ok = document.getElementsByClassName('inp-ok');
+				console.log(error);
+				console.log(Mobile);
+				var str = /^1[3|4|5|8][0-9]\d{4,8}$/;
+				Mobile[0].oninput = function (){
+					sMobile = Mobile[0].value;
+					if((str.test(sMobile))){
+						error[0].style.display = "none";
+						ok[0].style.display = "block";	 
+					}else{
+						error[0].style.display = "block";
+						ok[0].style.display = "none";
+					}	
+				}
+				Mobile[2].oninput = function (){
+					sMobile = Mobile[2].value;
+					if((str.test(sMobile))){
+						error[1].style.display = "none";
+						ok[1].style.display = "block";	 
+					}else{
+						error[1].style.display = "block";
+						ok[1].style.display = "none";
+					}	
+				}
+				var getCaptcha = document.getElementsByClassName('inp-pos--txt');
+					getCaptcha[0].onclick = function () {
+						settime();;
+					}
+					getCaptcha[1].onclick = function () {
+						settime1();;
+					}
+				var countdown=60;
+				var countdown1=60;
+				var timer = null;
+				var timer1 = null;
+				function settime() {
+					clearInterval(timer);  
+				      if (countdown == 0) {   
+				        getCaptcha[0].innerHTML = "获取验证码";  
+				        countdown = 60;  
+				        return false;  
+				      } else { 
+				        getCaptcha[0].innerHTML = "获取验证码(" + countdown + "s)";  
+				        countdown--;  
+				      }  
+				      timer = setInterval(function() {  
+				        settime();  
+				      },1000);  
+			    }  	
+			    function settime1() {
+					clearInterval(timer1);  
+				      if (countdown1 == 0) {   
+				        getCaptcha[1].innerHTML = "获取验证码";  
+				        countdown1 = 60;  
+				        return false;  
+				      } else { 
+				        getCaptcha[1].innerHTML = "获取验证码(" + countdown1 + "s)";  
+				        countdown1--;  
+				      }  
+				      timer1 = setInterval(function() {  
+				        settime1();  
+				      },1000);  
+			    }  	  		
+			</script>
+		<script>
+			var loginBox = document.getElementsByClassName("login-box");
+			var login = document.getElementById("login");
+			var registerBtn = document.getElementById("register");
+			var registerBox = document.getElementById("register-box");
+			var loginSwitch = document.getElementById("switchLogin");
+			var success = document.getElementById("success");
+			var regbtn = document.getElementById("btn-reg");
+			regbtn.onclick = function () {
+				success.style.display = "block";
+			}
+			registerBtn.onclick = function() {
+				registerBox.style.display = "block";
+				login.style.display = "none";
+			}
+			loginSwitch.onclick = function() {
+				console.log(1);
+				registerBox.style.display = "none";
+				login.style.display = "block";
+			}
+		</script>
+	</body>
+</html>
+<script type="text/javascript" src="js/cookieTools.js" ></script>
+<script type="text/javascript" src="js/tools.js" ></script>
+<script type="text/javascript">
+window.onload = function(){
+	$("#btn-login").onclick = function(){
+		let xhr = new XMLHttpRequest();
+		xhr.open("post","loginCheck.php",true);
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				if(xhr.responseText==1){
+					//1)、保存cookie
+					addCookie("call",$("#call").value,7);
+					//2)、跳转到首页
+					$("#callright").style.display = "block";
+					location.href = "2.html";
+				}else{
+					$("#callright").style.display = "none";
+					$("#callwrong").style.display = "block";
+					$("#wrongreg").innerHTML = "验证码错误";
+				}
+			}
+		}		
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		
+		let sendStr="call="+$("#call").value+"&reg="+$("#reg").value;
+		xhr.send(sendStr);
+	}
+	$("#btn-reg").onclick = function(){
+		let xhr = new XMLHttpRequest();
+		xhr.open("post","loginCheck.php",true);
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				if(xhr.responseText==2){
+					//1)、保存cookie
+					addCookie("call",$("#call").value,7);
+					//2)、跳转到首页
+					$("#callright1").style.display = "block";
+					location.href = "2.html";
+				}else{
+					$("#callright1").style.display = "none";
+					$("#callwrong1").style.display = "block";
+					$("#wrongreg1").innerHTML = "验证码错误";
+				}
+			}
+		}		
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		
+		let sendStr="call1="+$("#call1").value+"&reg1="+$("#reg1").value;
+		xhr.send(sendStr);
+	}
+}
+
+</script>
